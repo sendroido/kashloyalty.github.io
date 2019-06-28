@@ -1,651 +1,504 @@
-<html lang="en"><head>
+<html data-react-helmet="lang" class=" careers js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths no-mobile no-phone no-tablet mobilegradea" dir="ltr" style="" lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="
+      <link rel=" stylesheet"="">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kash | Get more regulars walking into your store</title>
-    <link rel="favicon" href="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/kash-fav.png?alt=media&token=05bd79c8-b7cf-4b5b-a35f-c1f1feabb405">
-    <meta name="theme-color" content="#0032a7">
-    <meta name="description" content="Kash helps your customers come back again & again. Reward customers who come back and turn new walk-ins into repeat regulars.">
+  <meta name="generator" content="Gatsby 2.7.3">
+  <title>Kash - Customer loyalty on Facebook Messenger!</title>
+  <link data-react-helmet="true" rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAGuUlEQVR4AezBAQkAAAACoP5PaG07AjUAAAAAAAAAAAAAAAAAAADwrGPPHmBlPYM4jKd2G904DWqFVZwiqG27DWpc27ZtBbVtXwY1rm3jzFd3kim+7PvOzn7Pmzxxztn9Z37Rvj7jTmmRtFdaKF3MKrHeirnjLpYWSnulRdKdrFIbHM0LGKrd0k2sEwbHTdLuAoeqOevUHgdI4uMASQ1wdNMoQBIfh1E31vp/OLorCI2HBBy67qxWAkd8JOBwRAIOheQuVnTHcbfC4YwEHLoHWNMNxwMlQGREAo74SMBhIwEHSMBhIwEHSMABEhsHSMABEhsHSMABEo0DJOAAiYkDJOAASQFjH2lwyaMGCTh0g6V9GgnHMH8YIAmOQzdMIwEHSMCRFAk4dA9x/v+K42EvAD5IwKFrDgMTR3N9kCBJgwMk4ACJxgEScIDExgEScIDExgEScIDEwAEScIDEwAEScIDEwAEScICkwLGfNMHhYEECjjKNl/bLiWNK+YMDCThcmpIFyZBXps/WBwQScITos9Gzk49744iR26oEQ9W6AXC0qSQOaVnvttuSD3x08957K46ke2Ac3auMY8lFt+3NAkQCSTgc4MgJRAJJHBzgcAFSdMOIkTtAUpcPHL3a7ihQeAKRQBIABzg8gUggAUc94/AHIoEEHPWMwx+IBBJ/HOCoOyCqa4eNAEneB45urQ0crkDsrhwyfBdIsjxwdGq5ywDhD8QOJA44wBEHCEikHtI+CWHsI/UER1ggIJGGFUgS4RgGjrhAQKKQOOAAhwcQNyQgAYfCER+I6orBw/eApNQDR8cWe0qgCAEEJApJAhzgCA5EIQEJOBLgiA4EJAoJOBLgiA/ERgIScCgclQOiu2zQsAKJBBJwSHPG7VnWvvnvOABSdOGAoXtBUjxwLG315G8HDRCQKCQGDnAABCRj3pgxejk4AAISu8VzxoMDICABiIUDICABiI0DICABiI0DICABiMIBEJAAxMYBEJAAROEASDYkAAEHQBSS/kP3jnhtxm6ABOnLsbuXtngiFwKAFJ3fZ0gEJAApcDz+mD5UgIAEIBoHQEACEBsHQEACEBsHQEACEI0DICABiI0DICABiMYBEJAAxAUHQEAiQMABkKxIdgEkUXPG7jJwACRK1w8fOU0ObwdAat6OZT3bTAuEAyBG7eXwLpW2AqRmbZEukYNr3wBAAFJ8bjm+c6UtAKkJjnOLTRsICEBsJAApg6MBgQCkJBKAKBwNCgQgJZAAROFoUCAAKYEEIApHJYAAxEYCEBtH1YAAxEYCEIWjwkAAopAAROEACED+jgQgCgdAAKKQVBiIjQMgALGR+ANxxwEQgCgkmysEZKOBAyAAMZGcJa2vAJD10ln2EgABiDMSBSQEDoAARCPxB+KPAyAA8UUiQELgAAhAXJAIkBA4AAIQFyQCJAQOgADEBYkACYEDIABxQSJAQuAACEBckAiQEDgAAhAXJAIkBA6AAMQFiQBxxAEQgDggcQCyLikOgACkBJLTpJV1AGSldFr6bwwQgDggESAhcAAEIC5IBEgIHAABiAsSARICB0AA4oJEgITAARCAuCARICFwAAQgLkgESAgcAAGICxIBEgIHQADigkSAhMABEIC4IBEgIXAABCAuSDQQfxwAAYg/Eg3EHwdAAOKM5Hhp0X8Askg6zv0DAwQgDkiO1UgEiMZxrP8nBQhAnJEoIApHJCAA2QmQdEgESDocANmZA8gPAEmDZNwb0zcsmjN+STIcAPkhB5BRAEnznnt36hlffz7hlGT/ACCjcgA5OygQHkDOTjaGQjI9GBAeQKYnHUMBOUqaD5AgDyDzpaOSD6KQNAuABCAAKXA0058dJAABiMYBEoAAxMYBEoAAxMYBEoAAROOIgAQgAAGHQjIHIADJ3Jc+OMr/TvIxQACSqY/17xwgAQhAbBwgAQhAbBwgAQhANA6QAAQgNg6QAAQgNg6QAAQgGgdIAAIQGwdIAAIQGwdIAAIQjQMkAAEIODSSjwACENWHlcahkBwqvQEQgPzWG9KhLGwjiQ8EIODwRwIQfyDg8EcSHwhAwOGPBCD+QMDhjyQ+EICAwx8JQPyBgMMfCUBcgcTHARKAOAEBhwOS8EAAAg4nJABxABIfB0gA4gsEHA5IDpKeCQMEIM9IB7JYXiQHKiQAcQASHwdI2rBUMiBt4uMAyS2slAzILbFxgGSpdDgLJQNyuLQ0Dg6Q9JbWSLukl6UTWSY5khOll6Vd0hqpNzia2oMDAQAAAABB/tYTbFABAAAAAAAAAAAAAAAAAAAAAJwAuZ3IiHcbwe8AAAAASUVORK5CYII=">
 
-    <meta name="Keywords" content="Loyalty in Nigeria, Loyalty program, Loyalty programs, Loyalty rewards, Cashback,  Chatbot, Card linked offers, Sell more, Sell faster, Save Money, FinTech, Grow your brand, Thank U Cash, thankucash, fundraiser, bill payments, digital marketing, referral programs, online marketing, advertising, referrals, points, loyalty points ">
+  <meta data-react-helmet="true" name="description" content=" Kash - Customer loyalty on Messenger, Whatsapp and SMS">
+
+<meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="https://monzo.com/usa/styles.53c8e34284ac7b370d9a.css">
+
+
+  <link data-react-helmet="true" rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/kash_ic.png?alt=media&amp;token=1ac23e27-372f-4f90-9ee3-a090334ca134">
+       <!-- Styles -->
+      <link rel="stylesheet" href="https://monzo.com/static/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://monzo.com/static/css/sweetalert.min.css">
+      <link rel="stylesheet" href="https://monzo.com/static/css/style-attributes.css?1560875077407475096">   
+      <link rel="stylesheet" href="https://monzo.com/static/css/monzo-framework.min.css?1560875077407475096">    
+      <link rel="stylesheet" href="https://monzo.com/static/css/home.css?1560875077407475096">
+<link rel="stylesheet" type="text/css" href="https://monzo.com/usa/styles.53c8e34284ac7b370d9a.css">
+
+
+  <style data-href="https://monzo.com/usa/styles.53c8e34284ac7b370d9a.css">.AccessibilityText-module__accessibilityText___ANLfO{position:absolute;top:0;left:0;width:1px;height:1px;overflow:hidden}.PersonDetails-module__container___5ih7z{max-width:400px;display:flex;flex-direction:column;margin:2rem auto;align-items:center}@media (min-width:48em){.PersonDetails-module__container___5ih7z{flex-direction:row;text-align:left;max-width:500px;margin:2rem 0}}.PersonDetails-module__image___1ByRN{width:150px;margin-right:auto;margin-left:auto;text-align:center}.PersonDetails-module__image___1ByRN img{border-radius:50%}@media (min-width:48em){.PersonDetails-module__image___1ByRN{margin-right:inherit;margin-left:inherit;padding-right:1rem}}.PersonDetails-module__content___1VyK7{margin:2rem 0;text-align:center}@media (min-width:48em){.PersonDetails-module__content___1VyK7{text-align:left}}.PersonDetails-module__heading___29ubE{margin-bottom:.5rem;font-size:1.25rem;line-height:1.25;font-weight:700}.PersonDetails-module__text___1hZwb{margin-bottom:.5rem;font-size:1rem;line-height:1.25;font-weight:400}.PersonDetails-module__link___1Mhog{display:inline-block;margin-top:.5rem;color:#00a0d6;font-weight:700;text-decoration:none}.PersonDetails-module__link___1Mhog:active,.PersonDetails-module__link___1Mhog:focus,.PersonDetails-module__link___1Mhog:hover{color:#14233c;text-decoration:underline}.Button-module__button___UaHzb{text-align:center;border:0;border-radius:5px;padding:.75rem 1rem;font-size:1rem;font-weight:600;font-family:Helvetica;text-decoration:none;cursor:pointer}.Button-module__primary___1GlDI{color:#fff;background-color:#00a0d6}.Button-module__primary___1GlDI:active,.Button-module__primary___1GlDI:focus,.Button-module__primary___1GlDI:hover{background-color:#144673}.Button-module__secondary___366L_{color:#00a0d6;background-color:#f7f7f7}.Button-module__secondary___366L_:active,.Button-module__secondary___366L_:focus,.Button-module__secondary___366L_:hover{color:#fff;background-color:#00a0d6}.Button-module__tertiary___2W4SU{color:#fff;background-color:#144673}.Button-module__tertiary___2W4SU:active,.Button-module__tertiary___2W4SU:focus,.Button-module__tertiary___2W4SU:hover{color:#fff;background-color:#00a0d6}.ContentWrapper-module__contentWrapper___8brMD{font-family:Maison Neue,Helvetica Neue,Helvetica,Arial,sans-serif;max-width:86rem;padding-left:2rem;padding-right:2rem;margin-right:auto;margin-left:auto}@media screen and (min-width:48rem){.ContentWrapper-module__contentWrapper___8brMD{padding-left:4rem;padding-right:4rem}}.CountrySwitcher-module__switcher___3991V{display:block;padding:.25rem 2rem .25rem 1rem;width:100%;max-width:100%;box-sizing:border-box;margin:0;border:1px solid #fff;border-radius:.5rem;background-color:transparent;background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat,repeat;background-position:right .7rem top 54%,0 0;background-size:.5rem auto,100%;-moz-appearance:none;-webkit-appearance:none;appearance:none;color:#fff;font-family:inherit;font-size:.875rem}.CountrySwitcher-module__switcher___3991V::-ms-expand{display:none}.CountrySwitcher-module__switcher___3991V:focus,.CountrySwitcher-module__switcher___3991V:hover{border-color:#00a0d6;outline:none}.CountrySwitcher-module__switcher___3991V option{font-weight:400}.Input-module__a11y-text___3sHsj{position:absolute;top:0;left:0;width:1px;height:1px;overflow:hidden}.Input-module__wrapper___1ZviW{position:relative;display:block}.Input-module__label___dcAoE{display:block;margin-bottom:.5rem;color:#707b8c;font-size:1rem;text-align:left}.Input-module__input___1tl8k{width:100%;box-sizing:border-box;padding:.675rem;background-color:#fff;border:1px solid #c3c8cf;border-radius:.3125rem;color:#34495e;font-family:inherit;font-size:1rem;line-height:1.25}.Input-module__input___1tl8k::-webkit-input-placeholder{color:#a8afba;line-height:1.25}.Input-module__input___1tl8k::-moz-placeholder{color:#a8afba;line-height:1.25}.Input-module__input___1tl8k:-ms-input-placeholder{color:#a8afba;line-height:1.25}.Input-module__input___1tl8k::-ms-input-placeholder{color:#a8afba;line-height:1.25}.Input-module__input___1tl8k::placeholder{color:#a8afba;line-height:1.25}.Input-module__required___lFVXl{color:#e74c3c}.Card-module__card___5FXnm{display:flex;flex-direction:column;background:#fff;box-shadow:0 5px 10px 0 rgba(0,0,0,.05);border-radius:.5rem;color:inherit;text-decoration:none}@media (min-width:48em){.Card-module__horizontal___3qyIT{flex-direction:row}.Card-module__horizontal___3qyIT .Card-module__content___mTDqi,.Card-module__horizontal___3qyIT .Card-module__media___2bRFJ{flex:0 0 50%;box-sizing:border-box}}@media (min-width:48em){.Card-module__horizontal___3qyIT .Card-module__image___g3zlC,.Card-module__horizontal___3qyIT .Card-module__image___g3zlC img{border-top-right-radius:0;border-top-left-radius:.5rem;border-bottom-left-radius:.5rem}}.Card-module__media___2bRFJ{position:relative}.Card-module__image___g3zlC{position:relative;height:0;padding-bottom:56.25%;z-index:1;overflow:hidden;background-color:#c3c8cf;border-top-right-radius:.5rem;border-top-left-radius:.5rem}.Card-module__image___g3zlC img{position:absolute;top:0;left:0;max-width:100%;height:auto;border-top-left-radius:.5rem;border-top-right-radius:.5rem}.Card-module__label___11Llh{position:absolute;top:1rem;left:1rem;z-index:2;padding:1rem 2rem;background-color:#707b8c;border-radius:.25rem;color:#fff;font-size:.875rem;font-weight:700}.Card-module__content___mTDqi{padding:2rem}.Card-module__metadata___vigcZ{display:block;color:#707b8c;text-align:right}.Card-module__heading___1FuIe{margin:1rem 0;font-weight:700;font-size:1.375rem;line-height:1.2}.Card-module__text___2TLXJ{line-height:1.3;font-weight:400}._global__container___2U4oh{width:100%;max-width:86rem;margin:0 auto;padding-left:16px;padding-right:16px;box-sizing:border-box}@media (min-width:48em){._global__container___2U4oh{padding-left:64px;padding-right:64px}}.HeaderNavigation-module__wrapper___2szy9{background:#14233c}@media (min-width:48em){.HeaderNavigation-module__wrapper___2szy9{padding:0;display:flex;align-items:center}}.HeaderNavigation-module__container___2Uoc0{display:flex;flex-direction:column;position:relative;padding-top:1.25rem;padding-bottom:1.25rem}@media (min-width:48em){.HeaderNavigation-module__container___2Uoc0{flex-direction:row;justify-content:space-between;align-items:center;padding-top:0;padding-bottom:0}}.HeaderNavigation-module__header___2yA5h{display:flex;justify-content:space-between}.HeaderNavigation-module__logo___2Q2zP{width:172px;height:38px;display:block}@media (max-width:47.99em){.HeaderNavigation-module__logo___2Q2zP{height:30px}}.HeaderNavigation-module__toggle___300j1{background:none;border:none;color:#fff;font-size:1rem;display:flex;justify-content:center;align-content:center;cursor:pointer;margin-right:.625rem}@media (min-width:48em){.HeaderNavigation-module__toggle___300j1{display:none}}.HeaderNavigation-module__toggleIcon___2nV2_{height:20px;fill:#fff;margin-left:1.25rem}.HeaderNavigation-module__toggleIconVisible___rc7Y_{margin-left:1.625rem}.HeaderNavigation-module__menu___-1Yww{display:none;margin:0;padding-right:1rem;padding-left:1rem}@media (min-width:48em){.HeaderNavigation-module__menu___-1Yww{display:flex;flex-direction:row;justify-content:center}}@media (max-width:47.99em){.HeaderNavigation-module__menuVisible___2uYb2{display:flex;flex-direction:column;margin:1rem 0 0;padding-top:0}}.HeaderNavigation-module__item___lVmzb{list-style:none;margin-bottom:.5rem}@media (min-width:48em){.HeaderNavigation-module__item___lVmzb{margin-bottom:0}}.HeaderNavigation-module__footer___382Ps{white-space:nowrap;padding-left:1rem;padding-right:1rem}@media (max-width:47.99em){.HeaderNavigation-module__footer___382Ps{display:none}.HeaderNavigation-module__footer___382Ps .HeaderNavigation-module__button___2RhUN{background-color:red}}@media (max-width:47.99em){.HeaderNavigation-module__footerVisible___3XHFD{display:flex;flex-direction:column;padding-top:0}}.Link-module__link___2wji8{display:flex;justify-content:center;align-items:center;padding:.75rem 2rem;background-color:rgba(20,70,115,.3);border-radius:.3125rem;color:#fff;font-family:Arial;text-decoration:none}.Link-module__link___2wji8:active,.Link-module__link___2wji8:focus,.Link-module__link___2wji8:hover{background-color:#144673}@media (min-width:48em){.Link-module__link___2wji8{border-radius:0;margin-bottom:0;background-color:#14233c;padding-top:1.625rem;padding-bottom:1.625rem}}@media (min-width:48em) and (max-width:3.41969em){.Link-module__link___2wji8{padding:1.625rem 1.5rem}}.Link-module__active___1CPuI{background-color:#144673}.Header-module__headerWrapper___2IN3u{background-color:#14233c;color:#fff;font-size:1.125rem;box-shadow:inset 0 -1px rgba(77,88,112,.4)}@media (max-width:48rem){.Header-module__headerWrapper___2IN3u{padding:0;width:100%}}.Header-module__headerWrapper___2IN3u a,.Header-module__headerWrapper___2IN3u a:active,.Header-module__headerWrapper___2IN3u a:focus,.Header-module__headerWrapper___2IN3u a:hover,.Header-module__headerWrapper___2IN3u a:visited{color:#fff}.Header-module__headerWrapper___2IN3u ul{margin:0 auto;padding:0;list-style:none}.Header-module__contentContainer___1OyqL{max-width:86rem;margin:0 auto}@media (max-width:48rem){.Header-module__contentContainer___1OyqL{max-width:100%}}.Header-module__flexContainer___2S_DU{display:flex;flex-direction:row;align-items:center;height:70px;padding:0 8rem}@media (max-width:48rem){.Header-module__flexContainer___2S_DU{height:62px;padding:0 1rem}}.Header-module__logoFlexContainer___1I_Qz{flex:1 0 auto;height:100%;display:flex;align-items:center}@media (min-width:48rem){.Header-module__logoFlexContainer___1I_Qz{flex-grow:0}}.Header-module__logoFlexContainer___1I_Qz a,.Header-module__logoFlexContainer___1I_Qz img{display:block}.Header-module__logoFlexContainer___1I_Qz img{height:30px;margin-bottom:0}@media (min-width:48rem){.Header-module__logoFlexContainer___1I_Qz img{height:38px}}.Header-module__fixed___32yNa{position:absolute}.Header-module__mobileMenu___bBXkA{align-self:flex-start;display:block;z-index:1;background-color:#14233c;padding:0 1rem 1rem;box-shadow:inset 0 -1px rgba(77,88,112,.4)}.Header-module__mobileMenu___bBXkA ul{text-align:center;padding:0 1rem}@media (min-width:48rem){.Header-module__mobileMenu___bBXkA{display:none}}.Header-module__mobileMenuLogo___1eDS0{width:135px;height:30px;display:block;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMTEuMjIiIGhlaWdodD0iNjguNjEiPjxnIGRhdGEtbmFtZT0iTGF5ZXIgMyI+PHBhdGggZD0iTTc2IDQ5Ljk0YTMuNTIgMy41MiAwIDAgMS0xIDIuNDlMNTkuMjQgNjguMmExLjQxIDEuNDEgMCAwIDEtMi40LTFWMzEuODdMNzUuODIgMTNINzZ6IiBmaWxsPSIjZTM0YjVmIi8+PHBhdGggZD0iTTYzLjQ2LjQxYTEuNDEgMS40MSAwIDAgMC0yIDBMMzggMjMuODZoLS4zM3YyNi40NkwzOCA1MWwxOC44NC0xOC44TDc2IDEzeiIgZmlsbD0iI2U3Y2U5YyIvPjxwYXRoIGQ9Ik0wIDQ5Ljk0YTMuNTIgMy41MiAwIDAgMCAxIDIuNDlMMTYuOCA2OC4yYTEuNDEgMS40MSAwIDAgMCAyLjQtMVYzMS44N0wuMjIgMTNIMHoiIGZpbGw9IiMxZTc4ODkiLz48cGF0aCBkPSJNMTQuNTcuNDFhMS40MSAxLjQxIDAgMCAwLTIgMEwwIDEzbDE5LjIgMTkuMkwzOCA1MVYyMy44NnoiIGZpbGw9IiM5N2JhYTYiLz48cGF0aCBkPSJNOTkuNjQgNDkuOTRWMTQuNjlIMTA5djQuNzNhMTAuNDMgMTAuNDMgMCAwIDEgOS42MS01LjQyIDEwLjczIDEwLjczIDAgMCAxIDkuNzggNS42NWMzLjY4LTMuODcgNi41LTUuNjUgMTAuOS01LjY1IDcuOTQgMCAxMi40MSA0LjQ2IDEyLjQxIDEyLjY3djIzLjI3aC0xMC4xMXYtMTkuMWMwLTQuOTItMS4wNS03LjE2LTQuOTItNy4xNnMtNiAyLjQzLTYgNy4xNnYxOS4xaC0xMC4yMnYtMTkuMWMwLTQuOTItMS4wNS03LjE2LTQuOTItNy4xNnMtNiAyLjQzLTYgNy4xNnYxOS4xek0xNjQuMTcgMTkuMjlBMTguNjEgMTguNjEgMCAwIDEgMTk2IDMyLjA5YTE4IDE4IDAgMCAxLTUuMzIgMTMuMjYgMTguMjggMTguMjggMCAwIDEtMTMuMzkgNS41MUExNy40MiAxNy40MiAwIDAgMSAxNjQgNDUuMjJhMTguNDIgMTguNDIgMCAwIDEtNS4xOS0xMyAxOC4wNyAxOC4wNyAwIDAgMSA1LjM2LTEyLjkzek0xNzcuMzcgNDFhOC41MSA4LjUxIDAgMCAwIDguMzQtOC42NyA4LjM1IDguMzUgMCAxIDAtMTYuNjcgMCA4LjU1IDguNTUgMCAwIDAgOC4zMyA4LjY3ek0yMDMuMTEgNDkuOTRWMTQuNjlIMjEzbC0uMTMgNC43M2MyLjEzLTMuNTUgNS40LTUuNDIgMTAuMDYtNS40MiA3LjI5IDAgMTIgNC42IDEyIDEyLjY3djIzLjI3aC0xMC4zNnYtMTkuMWMwLTQuOTItMS4wNS03LjE2LTUuMDUtNy4xNnMtNi4yNCAyLjQzLTYuMjQgNy4xNnYxOS4xek0yNzkuMzggMTkuMjlhMTguNjEgMTguNjEgMCAwIDEgMzEuODQgMTIuOCAxOCAxOCAwIDAgMS01LjMyIDEzLjI2IDE4LjI4IDE4LjI4IDAgMCAxLTEzLjM5IDUuNTEgMTcuNDIgMTcuNDIgMCAwIDEtMTMuMzMtNS42NSAxOC40MiAxOC40MiAwIDAgMS01LjE5LTEzIDE4LjA3IDE4LjA3IDAgMCAxIDUuMzktMTIuOTJ6TTI5Mi41OCA0MWE4LjUxIDguNTEgMCAwIDAgOC4zNC04LjY3IDguMzUgOC4zNSAwIDEgMC0xNi42NyAwIDguNTUgOC41NSAwIDAgMCA4LjMzIDguNjd6TTI0Mi43NCA0OS45NHYtNy4zNWwxNC41MS0xOC43N2gtMTQuNTF2LTkuMTNoMjYuMTlWMjNsLTEyLjggMTcuNzloMTMuMDd2OS4xMnoiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+);background-repeat:no-repeat;background-size:cover;text-indent:-999em;overflow:hidden}@media (min-width:48rem){.Header-module__mobileMenuLogo___1eDS0{width:172px;height:38px;margin-top:0}}.Header-module__mobileMenuLink___2KGHK{background-color:hsla(0,0%,100%,.025);display:block;list-style:none;text-align:center;border-radius:5px;cursor:pointer;line-height:40px;margin:.5rem 0 0;padding:0 1rem;font-size:1rem}.Header-module__mobileSignUpBtn___2v_4z{width:100%;font-size:1rem;line-height:25px;min-height:43px;display:block;margin-top:2rem;font-weight:600;background-color:#00a0d6;border:1px solid #00a0d6;border-radius:5px;color:#fff}.Header-module__primaryNavFlexContainer___OA1JG{display:none;flex:1 0 auto;height:100%}@media (min-width:48rem){.Header-module__primaryNavFlexContainer___OA1JG{display:block}}.Header-module__primaryNavFlexContainer___OA1JG ul{display:flex;justify-content:center;align-items:center;height:100%}.Header-module__primaryNavFlexContainer___OA1JG li{list-style:none;text-align:center;margin:0}.Header-module__primaryNavFlexContainer___OA1JG a,.Header-module__primaryNavFlexContainer___OA1JG span{display:block;padding:0 2rem;text-decoration:none;line-height:70px}.Header-module__primaryNavFlexContainer___OA1JG a:active,.Header-module__primaryNavFlexContainer___OA1JG a:focus,.Header-module__primaryNavFlexContainer___OA1JG a:hover{background-color:rgba(170,178,192,.05);color:inherit}.Header-module__primaryNavFlexContainer___OA1JG span{background:hsla(0,0%,100%,.1);font-weight:700}.Header-module__secondaryNavFlexContainer___Q-1qw{display:none;flex:0 0 auto}@media (min-width:48rem){.Header-module__secondaryNavFlexContainer___Q-1qw{display:block}}.Header-module__mobileNavFlexContainer___3BOj4{display:block;color:#fff;font-weight:600}@media (min-width:48rem){.Header-module__mobileNavFlexContainer___3BOj4{display:none}}.Header-module__button___3pcJp{display:block;padding:.5rem 1rem;background-color:#00a0d6;border:1px solid #00a0d6;border-radius:5px;color:#fff;font-size:1rem;font-weight:600;line-height:25px;text-decoration:none;text-align:center}.Header-module__button___3pcJp:hover{background-color:#008dbd;border-color:#008dbd}.Header-module__navLink___1QJ9r{background-color:hsla(0,0%,100%,.1);font-weight:700}.Header-module__mobileNavBtn___2_qTz{cursor:pointer;display:block;color:#fff;font-weight:600;background-color:transparent;text-align:center;font-size:1rem;border:0;height:62px}@media (min-width:48rem){.Header-module__mobileNavBtn___2_qTz{display:none}}.Header-module__mobileNavBtn___2_qTz img{margin:0}.Footer-module__footerWrapper___3vLzx{margin:0;padding-top:4rem;background-color:#14233c;color:hsla(0,0%,100%,.6);font-size:18px;font-weight:400}.Footer-module__footerWrapper___3vLzx a,.Footer-module__footerWrapper___3vLzx a:active,.Footer-module__footerWrapper___3vLzx a:focus,.Footer-module__footerWrapper___3vLzx a:hover,.Footer-module__footerWrapper___3vLzx a:visited{color:hsla(0,0%,100%,.9);text-decoration:none}.Footer-module__logoContainer___1_Bg4{display:block;line-height:0;flex-grow:1;margin-bottom:2rem}@media (max-width:48rem){.Footer-module__logoContainer___1_Bg4{text-align:center}}.Footer-module__logoContainer___1_Bg4 img{height:30px;margin-bottom:0}.Footer-module__contentContainer___1TIoh{max-width:86rem;margin:0 auto}@media (max-width:48rem){.Footer-module__contentContainer___1TIoh{max-width:100%}}.Footer-module__flexContainer___puO9s{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:0 8rem}@media (max-width:48rem){.Footer-module__flexContainer___puO9s{padding:0 1rem}}.Footer-module__appStoreAndSocialBadges___1orcz{min-width:280px;text-align:left;margin-bottom:24px}@media (max-width:48rem){.Footer-module__appStoreAndSocialBadges___1orcz{margin:0 auto}}.Footer-module__appStoreBadgeLink___-H-Og:not(:last-of-type){margin-right:24px}.Footer-module__appStoreBadgeLink___-H-Og img{margin-bottom:12px;height:40px}.Footer-module__socialNav___2cSH8{display:inline-flex;justify-content:center;height:40px;width:40px;border-radius:6px;background-color:#4d5870;color:#fff}.Footer-module__socialNav___2cSH8:not(:last-of-type){margin-right:30px}.Footer-module__socialNav___2cSH8 img{margin:0}.Footer-module__siteNav___3oRgt{flex-grow:3;display:flex;flex-wrap:wrap}.Footer-module__siteNav___3oRgt ul{flex:0 0 auto;margin:.5rem 0 1rem;padding:0 1rem;list-style:none}.Footer-module__siteNav___3oRgt li{line-height:26px;margin-bottom:12px}.Footer-module__disclaimer___d0KWk{background-color:#121f35;color:hsla(0,0%,100%,.6);line-height:1.75rem;padding:4rem 0}.Footer-module__disclaimer___d0KWk p{width:66%}@media (max-width:48rem){.Footer-module__disclaimer___d0KWk p{width:100%}}.Footer-module__disclaimer___d0KWk .Footer-module__help___1EUJg{color:#4d5870}.Footer-module__disclaimer___d0KWk .Footer-module__help___1EUJg a{color:#4d5870;text-decoration:underline}.Footer-module__disclaimerContentContainer___14wQF{max-width:86rem;margin:0 auto;padding:0 8rem;font-size:1rem}@media (max-width:48rem){.Footer-module__disclaimerContentContainer___14wQF{padding:0 1rem;font-size:.875rem}}.Header-module__container___1_Tic{width:100%;max-width:86rem;margin:0 auto;padding-left:16px;padding-right:16px;box-sizing:border-box}@media (min-width:48em){.Header-module__container___1_Tic{padding-left:64px;padding-right:64px}}.Header-module__header___2gV_n{background-color:#14233c;border-bottom:1px solid #34495e;padding-top:1rem;padding-bottom:1rem;position:-webkit-sticky;position:sticky;top:0;z-index:1}.Header-module__navigation___3_1kg{display:flex;align-items:center;justify-content:space-between}.Header-module__logo___2Zf4H{width:8.4375rem;height:1.875rem;display:block}@media (min-width:48em){.Header-module__logo___2Zf4H{width:10.75rem;height:2.375rem}}.Footer-module__container___39nRG{width:100%;max-width:86rem;margin:0 auto;padding-left:16px;padding-right:16px;box-sizing:border-box}@media (min-width:48em){.Footer-module__container___39nRG{padding-left:64px;padding-right:64px}}.Footer-module__footer___VUGIP{padding-top:2rem;padding-bottom:4rem}.Footer-module__container___39nRG{display:flex;justify-content:space-between;flex-direction:column}@media (min-width:48em){.Footer-module__container___39nRG{flex-direction:row;align-items:center}}.Footer-module__navigation___3XwKh{display:flex;flex-direction:column;padding-top:1rem}@media (min-width:48em){.Footer-module__navigation___3XwKh{flex-direction:row;padding-top:0;padding-bottom:0}}.Footer-module__item___K9iG3{padding-top:.5rem;padding-bottom:.5rem}@media (min-width:48em){.Footer-module__item___K9iG3{padding:0 1rem}}.Footer-module__link___2WPgG{color:#fff;text-decoration:none}.Footer-module__link___2WPgG:active,.Footer-module__link___2WPgG:focus,.Footer-module__link___2WPgG:hover{color:#00a0d6}.Footer-module__button___DivLq{display:inline-block;background-color:#707b8c;border-radius:.3125rem}.Footer-module__button___DivLq:active,.Footer-module__button___DivLq:focus,.Footer-module__button___DivLq:hover{background-color:#34495e}.Footer-module__icon___Xc-aO{width:1.125rem;height:1.125rem;display:block;margin:.625rem;fill:#fff}.Footer-module__logo___1eKbS{width:8.4375rem;height:1.875rem;display:block;padding-top:1rem}@media (min-width:48em){.Footer-module__logo___1eKbS{display:none}}.Footer-module__disclaimer___26WsU{display:block;padding-top:2rem}.Footer-module__disclaimer___26WsU p{padding:1rem 0;color:#707b8c;line-height:1.4}.Icons-module__icons___1WYrB{display:none}._404-module__container___2kCC_{width:100%;max-width:86rem;margin:0 auto;padding-left:16px;padding-right:16px;box-sizing:border-box}@media (min-width:48em){._404-module__container___2kCC_{padding-left:64px;padding-right:64px}}._404-module__short___E5QDV{font-size:1.125rem;line-height:1.5}._404-module__grande___1FiiU{font-size:1.25rem;font-weight:700;line-height:1.5}._404-module__grandeIced___15CFE{font-size:1.5rem;font-weight:700;line-height:1.4}._404-module__trenta___1SB-M{font-size:2.25rem;font-family:Avenir next,sans-serif;font-weight:700;line-height:1.4}._404-module__container___2kCC_{padding-top:2rem;padding-bottom:2rem}@media (min-width:48em){._404-module__container___2kCC_{display:flex;align-items:center}}@media (min-width:48em){._404-module__column___1YqDD{flex:0 1 50%}}._404-module__heading___1S2uI{margin-bottom:1rem;color:#c3c8cf;font-size:10rem}._404-module__heading___1S2uI,._404-module__text___2YT6n{font-family:Avenir Next,HelveticaNeue,Helvetica,Arial,sans-serif;font-weight:600}._404-module__text___2YT6n{color:#fff;font-size:1.625rem;line-height:1.75}._404-module__image___3jRBY{width:600px;height:600px;max-width:100%}.Features-module__short___2FCjV{font-size:1.125rem;line-height:1.5}.Features-module__grande___3USgd{font-size:1.25rem;font-weight:700;line-height:1.5}.Features-module__grandeIced___n-4V0{font-size:1.5rem;font-weight:700;line-height:1.4}.Features-module__trenta___3D3a0{font-size:2.25rem;font-family:Avenir next,sans-serif;font-weight:700;line-height:1.4}.Features-module__animated___iQFro{-webkit-animation-duration:1.2s;animation-duration:1.2s;-webkit-animation-fill-mode:both;animation-fill-mode:both}@-webkit-keyframes Features-module__swing___VGTcg{20%{-webkit-transform:rotate(7deg);transform:rotate(7deg)}40%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}60%{-webkit-transform:rotate(3deg);transform:rotate(3deg)}80%{-webkit-transform:rotate(-1deg);transform:rotate(-1deg)}to{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}@keyframes Features-module__swing___VGTcg{20%{-webkit-transform:rotate(7deg);transform:rotate(7deg)}40%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}60%{-webkit-transform:rotate(3deg);transform:rotate(3deg)}80%{-webkit-transform:rotate(-1deg);transform:rotate(-1deg)}to{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}.Features-module__swing___VGTcg{-webkit-transform-origin:top center;transform-origin:top center;-webkit-animation-name:Features-module__swing___VGTcg;animation-name:Features-module__swing___VGTcg;-webkit-animation-delay:8s;animation-delay:8s}@-webkit-keyframes Features-module__fadeInLeft___1FGAr{0%{opacity:0;-webkit-transform:translate3d(-5%,0,0);transform:translate3d(-5%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes Features-module__fadeInLeft___1FGAr{0%{opacity:0;-webkit-transform:translate3d(-5%,0,0);transform:translate3d(-5%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.Features-module__fadeInLeft___1FGAr{-webkit-animation-name:Features-module__fadeInLeft___1FGAr;animation-name:Features-module__fadeInLeft___1FGAr;-webkit-animation-delay:.4s;animation-delay:.4s}@-webkit-keyframes Features-module__fadeInRight___3_hvN{0%{opacity:0;-webkit-transform:translate3d(5%,0,0);transform:translate3d(5%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes Features-module__fadeInRight___3_hvN{0%{opacity:0;-webkit-transform:translate3d(5%,0,0);transform:translate3d(5%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.Features-module__fadeInRight___3_hvN{-webkit-animation-name:Features-module__fadeInRight___3_hvN;animation-name:Features-module__fadeInRight___3_hvN;-webkit-animation-delay:.4s;animation-delay:.4s}.Features-module__container___1yfKn{position:relative}@media (min-width:48em){.Features-module__container___1yfKn{display:flex}}.Features-module__list___DpmPQ{text-align:left;line-height:1.75;margin-bottom:4rem}@media (min-width:48em){.Features-module__list___DpmPQ{flex:0 1 50%}}.Features-module__hero___19JTY{margin-bottom:4rem}.Features-module__hero___19JTY .Features-module__text___2mzRx{font-size:1.125rem}@media (max-width:47.99em){.Features-module__item___1I5J6{padding-bottom:4rem}}@media (min-width:48em){.Features-module__item___1I5J6{height:75vh;min-height:75vh;display:flex;flex-direction:column;justify-content:center;padding-right:2.5rem}}.Features-module__title___2uEyu{padding-bottom:2rem;padding-top:2rem;text-align:center}@media (min-width:48em){.Features-module__title___2uEyu{text-align:left}}.Features-module__heading___3fXxp{margin-bottom:1rem;text-align:center}@media (min-width:48em){.Features-module__heading___3fXxp{text-align:left}}.Features-module__link___1ndK_{color:#00a0d6;font-weight:700;text-decoration:none}.Features-module__link___1ndK_:active,.Features-module__link___1ndK_:focus,.Features-module__link___1ndK_:hover{color:#fff}.Features-module__image___1nD94{width:100%;max-width:18rem;display:block;margin-right:auto;margin-bottom:1rem;margin-left:auto}@media (min-width:48em){.Features-module__image___1nD94{display:none}}.Features-module__text___2mzRx{margin-bottom:1rem;color:#c3c8cf;text-align:center;font-weight:400}@media (min-width:48em){.Features-module__text___2mzRx{text-align:left;font-weight:400;font-size:1.5rem}}.Features-module__buttons___1nc_u{margin-top:2rem;margin-bottom:2rem}.Features-module__buttons___1nc_u a{display:block;text-align:center}@media (min-width:48em){.Features-module__buttons___1nc_u a{display:inline-block}}.Features-module__switcher___2FT4s{display:none}@media (min-width:48em){.Features-module__switcher___2FT4s{position:-webkit-sticky;position:sticky;top:4rem;height:calc(100vh - 4rem);display:flex;flex:0 1 45%;align-items:center;align-self:baseline;box-sizing:border-box}}.Features-module__images___3v__L{position:relative;margin-left:8rem}.Features-module__images___3v__L img{max-width:100%;height:auto;display:block}.Features-module__screenshot___2-CfB{position:absolute;top:0;left:0;z-index:3;opacity:0;-webkit-transition:opacity .4s ease-in-out;transition:opacity .4s ease-in-out}.Features-module__screenshotIsVisible___3djA7{opacity:1}.Features-module__phone___2aRhX{position:relative;z-index:2}.Features-module__card___EcDu-{position:absolute;bottom:1px;left:-8.75rem;z-index:1;min-width:112%}.ReasonsToSignup-module__short___20r8H{font-size:1.125rem;line-height:1.5}.ReasonsToSignup-module__grande___1DXGY{font-size:1.25rem;font-weight:700;line-height:1.5}.ReasonsToSignup-module__grandeIced___3n_Zh{font-size:1.5rem;font-weight:700;line-height:1.4}.ReasonsToSignup-module__trenta___1hKKl{font-size:2.25rem;font-family:Avenir next,sans-serif;font-weight:700;line-height:1.4}.ReasonsToSignup-module__list___39AY8{text-align:left}@media (min-width:48em){.ReasonsToSignup-module__list___39AY8{display:flex;flex-wrap:wrap}}.ReasonsToSignup-module__item___2SHfe{padding-top:2rem;padding-bottom:2rem}@media (min-width:48em){.ReasonsToSignup-module__item___2SHfe{flex:0 1 50%;box-sizing:border-box}.ReasonsToSignup-module__item___2SHfe:nth-child(odd){padding-right:2rem}.ReasonsToSignup-module__item___2SHfe:nth-child(2n){padding-left:2rem}}.ReasonsToSignup-module__icon___1u7l3{margin-bottom:1.5rem;width:48px;height:48px}@media (min-width:48em){.ReasonsToSignup-module__icon___1u7l3{width:32px;height:32px}}.ReasonsToSignup-module__heading___1aolz{margin-bottom:.5rem}.ReasonsToSignup-module__text___3bUOV{color:#c3c8cf}.LaunchEvents-module__short___2Y1v5{font-size:1.125rem;line-height:1.5}.LaunchEvents-module__grande___DB8oM{font-size:1.25rem;font-weight:700;line-height:1.5}.LaunchEvents-module__grandeIced___3KPU0{font-size:1.5rem;font-weight:700;line-height:1.4}.LaunchEvents-module__trenta___2ACBI{font-size:2.25rem;font-family:Avenir next,sans-serif;font-weight:700;line-height:1.4}.LaunchEvents-module__icon___32ltV{width:48px;height:44px;margin-bottom:1rem}.LaunchEvents-module__text___3QoZ5{color:#c3c8cf;margin:.5rem}.LaunchEvents-module__buttons___1AeL- a{display:inline-block;margin-top:1rem}@media (min-width:48em){.LaunchEvents-module__buttons___1AeL- a:nth-child(odd){margin-right:1.25rem}}.SignupForm-module__form____48_F{padding-top:2rem;padding-bottom:2rem;text-align:center}@media (min-width:48em){.SignupForm-module__form____48_F{padding-top:7rem;padding-bottom:7rem}}.SignupForm-module__legend___2awRP{color:#14233c;font-size:1.125rem;font-family:Avenir next,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.125rem;margin-right:auto;margin-left:auto;padding-top:1rem;padding-bottom:2rem}.SignupForm-module__list___Grupu{display:flex;flex-direction:column;justify-content:center}@media (min-width:48em){.SignupForm-module__list___Grupu{flex-direction:row}}.SignupForm-module__item___1OfLt{padding-bottom:1rem}@media (min-width:48em){.SignupForm-module__item___1OfLt{padding:0 .5rem}.SignupForm-module__item___1OfLt:first-child{padding-left:0}.SignupForm-module__item___1OfLt:last-child{padding-right:0}}.SignupForm-module__item___1OfLt button{width:100%;white-space:nowrap}@media (min-width:48em){.SignupForm-module__item___1OfLt button{margin-top:1.5rem}}.SignupForm-module__message___tn-Ud{margin-bottom:1rem;padding:1rem;border-radius:.5rem;color:#fff;font-weight:700;font-size:1rem;line-height:1.25;text-align:center}.SignupForm-module__success___2A-oI{background:#30803d}.SignupForm-module__error___23EA0{background:#8e2520}@font-face{font-family:Maison Neue;src:url(https://monzo.com/static/fonts/maisonneueweb-book-webfont.eot);src:url(https://monzo.com/static/fonts/maisonneueweb-book-webfont.eot#iefix) format("embedded-opentype"),url(https://monzo.com/static/fonts/maisonneueweb-book-webfont.woff2) format("woff2"),url(https://monzo.com/static/fonts/maisonneueweb-book-webfont.woff) format("woff"),url(https://monzo.com/static/fonts/maisonneueweb-book-webfont.ttf) format("truetype"),url(https://monzo.com/static/fonts/maisonneueweb-book-webfont.svg#webfontregular) format("svg");font-weight:400;font-style:normal}@font-face{font-family:Maison Neue;src:url(https://monzo.com/static/fonts/maisonneueweb-bold-webfont.woff2) format("woff2"),url(https://monzo.com/static/fonts/maisonneueweb-bold-webfont.woff) format("woff");font-weight:700}@font-face{font-family:Maison Neue;src:url(https://monzo.com/static/fonts/maisonneueweb-book-italic-webfont.woff2) format("woff2"),url(https://monzo.com/static/fonts/maisonneueweb-book-italic-webfont.woff) format("woff");font-style:italic}@font-face{font-family:Maison Neue;src:url(https://monzo.com/static/fonts/maisonneueweb-bold-italic-webfont.woff2) format("woff2"),url(https://monzo.com/static/fonts/maisonneueweb-bold-italic-webfont.woff) format("woff");font-weight:700;font-style:italic}.Layout-module__container___2EaUW{width:100%;max-width:86rem;margin:0 auto;padding-left:16px;padding-right:16px;box-sizing:border-box}@media (min-width:48em){.Layout-module__container___2EaUW{padding-left:64px;padding-right:64px}}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}body,html{background-color:#121f35;color:#fff;font-family:Maison Neue,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:16px;-webkit-font-smoothing:antialiased}a:active,a:focus,button:active,button:focus,input:active,input:focus{outline:3px solid #00a0d6}.Layout-module__main___1OIFf{padding-top:4rem;padding-bottom:4rem}.Layout-module__gradient___32sa7{background:#14233c;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#14233c),to(#385c98));background:linear-gradient(180deg,#14233c 0,#385c98)}.Layout-module__light___3fkrI{background-color:#f7f7f7}.Layout-module__dark___1BkQI{background-color:#1f3d6f;padding:6rem 0}.Layout-module__darkest___qdETW{background-color:#162f5a;padding:6rem 0}.Layout-module__container___2EaUW{max-width:68rem;text-align:center}</style>
+
+
+
+
+
+
+ 
+       <style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><span class="webxray-deleted"></span>
+
+
+
+
+  <noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript>
+  <div id="___gatsby">
+    <div style="outline:none" tabindex="-1" role="group">
+      <svg class="Icons-module__icons___1WYrB"><defs><symbol id="monzo-logo" viewBox="0 0 311 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path fill="#e34b5f" d="M76 50a4 4 0 0 1-1 2L59 68a1 1 0 0 1-2-1V32l19-19z"></path><path fill="#e7ce9c" d="M63 0a1 1 0 0 0-2 0L38 24v27l19-19 19-19z"></path><path fill="#1e7889" d="M0 50a4 4 0 0 0 1 2l16 16a1 1 0 0 0 2-1V32L0 13z"></path><path fill="#97baa6" d="M15 0a1 1 0 0 0-2 0L0 13l19 19 19 19V24z"></path><path fill="#fff" d="M100 50V15h9v4a10 10 0 0 1 10-5 11 11 0 0 1 9 6c4-4 7-6 11-6 8 0 13 4 13 13v23h-10V31c0-5-1-7-5-7s-6 2-6 7v19h-11V31c0-5-1-7-4-7s-6 2-6 7v19zm64-31a19 19 0 0 1 32 13 18 18 0 0 1-5 13 18 18 0 0 1-14 6 17 17 0 0 1-13-6 18 18 0 0 1-5-13 18 18 0 0 1 5-13zm13 22a9 9 0 0 0 9-9 8 8 0 1 0-17 0 9 9 0 0 0 8 9zm26 9V15h10v4c2-3 5-5 10-5 7 0 12 5 12 13v23h-10V31c0-5-1-7-5-7s-7 2-7 7v19zm76-31a19 19 0 0 1 32 13 18 18 0 0 1-5 13 18 18 0 0 1-13 6 17 17 0 0 1-14-6 18 18 0 0 1-5-13 18 18 0 0 1 5-13zm14 22a9 9 0 0 0 8-9 8 8 0 1 0-17 0 9 9 0 0 0 9 9zm-50 9v-7l14-19h-14v-9h26v8l-13 18h13v9z"></path></g></symbol><symbol id="twitter-bird" viewBox="0 0 17.5 14.2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#FFFFFF" d="M15.7 3.5V4c0 4.8-3.6 10.2-10.2 10.2-2 0-3.9-.6-5.5-1.6h.9c1.7 0 3.2-.6 4.5-1.5-1.6 0-2.9-1.1-3.4-2.5.2 0 .4.1.7.1.3 0 .6 0 .9-.1C1.9 8.2.7 6.8.7 5c.5.3 1 .4 1.6.5-1-.6-1.6-1.7-1.6-3 0-.7.2-1.3.5-1.8C3 2.8 5.7 4.3 8.6 4.4c0-.3-.1-.5-.1-.8 0-2 1.6-3.6 3.6-3.6 1 0 2 .4 2.6 1.1.9-.1 1.7-.4 2.3-.8-.3.8-.8 1.5-1.6 2 .7-.1 1.4-.3 2.1-.6-.5.7-1.1 1.3-1.8 1.8z"></path></symbol><symbol id="facebook" viewBox="0 0 9.6 18.5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path fill="#FFFFFF" d="M9.6,3.1H7.9c-1.4,0-1.6,0.7-1.6,1.6v2.1h3.3l-0.4,3.3H6.2v8.4H2.8v-8.4H0V6.8h2.8V4.3C2.8,1.5,4.6,0,7.1,0 c1.2,0,2.2,0.1,2.5,0.1V3.1z"></path></g></symbol><svg id="linked-in" viewBox="0 0 17.1 16.3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path fill="#FFFFFF" d="M2,3.8L2,3.8C0.8,3.8,0,3,0,1.9C0,0.8,0.8,0,2.1,0c1.3,0,2,0.8,2,1.9C4.1,3,3.3,3.8,2,3.8z M3.9,16.3H0.2v-11 h3.7V16.3z M17.1,16.3h-3.7v-5.9c0-1.5-0.5-2.5-1.9-2.5c-1,0-1.6,0.7-1.9,1.3c-0.1,0.2-0.1,0.6-0.1,0.9v6.2H5.9c0-10,0-11,0-11h3.7 v1.6h0C10,6.2,10.9,5,12.9,5c2.4,0,4.2,1.6,4.2,5V16.3z"></path></g></svg>
+
+        <symbol id="heart" viewBox="0 0 48 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Master" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="203" transform="translate(-937.000000, -3839.000000)" fill="#EA5E67"><g id="Icons/hot-coral-heart" transform="translate(937.000000, 3837.000000)"><path d="M34.7947211,2.5 C30.3338973,2.5 26.3908697,4.56478605 23.9997539,7.72668964 C21.6091303,4.56478605 17.6651183,2.5 13.2052789,2.5 C5.91183437,2.5 0,8.02004184 0,14.8291599 C0,35.798428 23.9997539,45.3117021 23.9997539,45.3117021 C23.9997539,45.3117021 48,35.798428 48,14.8291599 C48,8.02004184 42.0876734,2.5 34.7947211,2.5" id="Fill-43"></path></g></g></g></symbol>
+
+        <symbol id="lost-hot-chip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet"><defs><clipPath id="animationMask_u4lN9chfBm"><rect width="600" height="600" x="0" y="0"></rect></clipPath><clipPath id="cp_4W9UsTm1"><path d="M0,0 L364,0 L364,460 L0,460z"></path></clipPath></defs><g clip-path="url(#animationMask_u4lN9chfBm)"><g transform="matrix(1,0,0,1,0,0)" opacity="1"><rect width="600" height="600" fill="#121f35"></rect></g><g clip-path="url(#cp_4W9UsTm1)" transform="matrix(1,0,0,1,118,70)" opacity="1"><g transform="matrix(0.9051252656,0,0,0.2131688592,185.2333656537312,396.1053800962368)" opacity="0.81"><g opacity="1" transform="matrix(1,0,0,1,2.998,261.998)"><path fill="rgb(10,21,39)" fill-opacity="1" d="M0 0 M0,-13.998 C56.29490379999999,-13.998 102.002,-7.7254961999999985 102.002,0 C102.002,7.7254961999999985 56.29490379999999,13.998 0,13.998 C-56.29490379999999,13.998 -102.002,7.7254961999999985 -102.002,0 C-102.002,-7.7254961999999985 -56.29490379999999,-13.998 0,-13.998z"></path></g></g><g transform="matrix(0.19161762200543586,-0.799189384649835,0.799189384649835,0.19161762200543586,316.8094051262301,275.03613847456984)" opacity="1"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(253,55,106)" stroke-opacity="1" stroke-width="15" d="M0 0 M20.926,-38.482 C20.926,-38.482 66.24799999999999,56.925999999999995 -3.37,46.55"></path></g><g transform="matrix(0.7635664869305973,-0.3039526371599135,0.3039526371599135,0.7635664869305973,78.17130044278586,285.0258545908893)" opacity="1"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(253,55,106)" stroke-opacity="1" stroke-width="15" d="M0 0 M23.457,-33.167 C23.457,-33.167 -72.181,-89.00999999999999 -61.652,-14.788"></path></g><g transform="matrix(1,0,0,1,17.323025492252274,20.674282736270246)" opacity="0.7749301640535643"><path fill="rgb(222,222,222)" fill-opacity="1" d="M0 0 M0,-3 C1.6557,-3 3,-1.6557 3,0 C3,1.6557 1.6557,3 0,3 C-1.6557,3 -3,1.6557 -3,0 C-3,-1.6557 -1.6557,-3 0,-3z"></path></g><g transform="matrix(0.82184,0,0,0.82184,80.9598,20.260559999999998)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,129.529,215.8)"><path fill="rgb(252,56,107)" fill-opacity="1" d="M0 0 M109.867,215.8 C109.867,215.8 -109.865,215.8 -109.865,215.8 C-120.725,215.8 -129.529,206.996 -129.529,196.137 C-129.529,196.137 -130.13,178.119 -130.13,178.119 C-130.13,178.119 -205.627,116.672 -189.151,116.672 C-172.675,116.672 -129.529,119.714 -129.529,119.714 C-129.529,119.714 -129.529,-196.137 -129.529,-196.137 C-129.529,-206.996 -120.725,-215.8 -109.865,-215.8 C-109.865,-215.8 109.867,-215.8 109.867,-215.8 C120.726,-215.8 129.529,-206.996 129.529,-196.137 C129.529,-196.137 130.03,112.413 130.03,112.413 C130.03,112.413 196.617,109.97999999999999 197.06,110.588 C199.05,109.97999999999999 130.03,172.035 130.03,172.035 C130.03,172.035 129.529,196.137 129.529,196.137 C129.529,206.996 120.726,215.8 109.867,215.8z"></path></g><g opacity="1" transform="matrix(1,0,0,1,34.327,150.261)"><path fill="rgb(255,255,255)" fill-opacity="1" d="M0 0 M11.58,16.788 C11.58,16.788 -11.156,16.788 -11.156,16.788 C-11.156,16.788 -11.156,10.733 -11.156,10.733 C-11.156,10.733 -8.108,10.733 -8.108,10.733 C-10.437000000000001,9.336 -11.58,7.304 -11.58,4.551 C-11.58,1.7990000000000004 -10.395,-0.2749999999999999 -7.939,-1.757 C-10.437000000000001,-4.129 -11.58,-5.949 -11.58,-8.786 C-11.58,-13.908999999999999 -8.701,-16.788 -3.408,-16.788 C-3.408,-16.788 11.58,-16.788 11.58,-16.788 C11.58,-16.788 11.58,-10.268 11.58,-10.268 C11.58,-10.268 -0.74,-10.268 -0.74,-10.268 C-3.9160000000000004,-10.268 -5.356,-9.59 -5.356,-7.092 C-5.356,-4.552 -3.7889999999999997,-3.197 -0.74,-3.197 C-0.74,-3.197 11.58,-3.197 11.58,-3.197 C11.58,-3.197 11.58,3.366 11.58,3.366 C11.58,3.366 -0.74,3.366 -0.74,3.366 C-3.9160000000000004,3.366 -5.356,4.043 -5.356,6.541 C-5.356,9.082 -3.7889999999999997,10.437 -0.74,10.437 C-0.74,10.437 11.58,10.437 11.58,10.437 C11.58,10.437 11.58,16.788 11.58,16.788z"></path></g><g opacity="1" transform="matrix(-0.006457390381794894,-0.36994364720786477,0.36994364720786477,-0.006457390381794894,80.842,104.334)"><path fill="rgb(255,255,255)" fill-opacity="1" d="M0 0 M-1.361,-149.627 C-7.4799999999999995,-155.407 -15.056,-158.49599999999998 -23.863,-158.575 C-23.863,-158.575 -23.863,-141.362 -23.863,-141.362 C-15.827,-141.362 -9.283,-134.588 -9.283,-126.092 C-9.283,-117.711 -15.827,-110.938 -23.863,-110.938 C-31.785,-110.938 -38.443,-117.711 -38.443,-126.092 C-38.443,-134.588 -31.899,-141.362 -23.863,-141.362 C-23.863,-141.362 -23.863,-158.575 -23.863,-158.575 C-23.977999999999998,-158.576 -24.092,-158.583 -24.208,-158.583 C-32.589,-158.583 -40.739,-155.138 -46.939,-148.939 C-53.024,-142.85399999999998 -56.354,-134.933 -56.354,-126.322 C-56.354,-117.711 -53.254,-109.79 -47.284,-103.59 C-40.97,-96.931 -33.392,-93.717 -23.978,-93.717 C-14.679000000000002,-93.717 -6.871,-97.04599999999999 -0.557,-103.36 C5.643,-109.559 8.742,-117.25200000000001 8.742,-126.551 C8.742,-134.93200000000002 5.183,-143.42700000000002 -1.361,-149.627z"></path></g><g opacity="1" transform="matrix(1,0,0,1,34.327,84.384)"><path fill="rgb(255,255,255)" fill-opacity="1" d="M0 0 M11.58,10.267 C11.58,10.267 -11.156,10.267 -11.156,10.267 C-11.156,10.267 -11.156,3.915 -11.156,3.915 C-11.156,3.915 -8.108,4 -8.108,4 C-10.395,2.6029999999999998 -11.58,0.48599999999999977 -11.58,-2.52 C-11.58,-7.220000000000001 -8.616,-10.267 -3.408,-10.267 C-3.408,-10.267 11.58,-10.267 11.58,-10.267 C11.58,-10.267 11.58,-3.578 11.58,-3.578 C11.58,-3.578 -0.74,-3.578 -0.74,-3.578 C-3.9160000000000004,-3.578 -5.356,-2.9010000000000002 -5.356,-0.318 C-5.356,2.307 -3.7889999999999997,3.704 -0.74,3.704 C-0.74,3.704 11.58,3.704 11.58,3.704 C11.58,3.704 11.58,10.267 11.58,10.267z"></path></g><g opacity="1" transform="matrix(-0.006457390381794894,-0.36994364720786477,0.36994364720786477,-0.006457390381794894,80.842,104.334)"><path fill="rgb(255,255,255)" fill-opacity="1" d="M0 0 M220.236,-146.075 C214.117,-151.855 206.541,-154.944 197.734,-155.023 C197.734,-155.023 197.734,-137.809 197.734,-137.809 C205.77,-137.809 212.315,-131.036 212.315,-122.54 C212.315,-114.159 205.77,-107.385 197.734,-107.385 C189.812,-107.385 183.154,-114.159 183.154,-122.54 C183.154,-131.036 189.698,-137.809 197.734,-137.809 C197.734,-137.809 197.734,-155.023 197.734,-155.023 C197.619,-155.024 197.506,-155.03 197.39,-155.03 C189.009,-155.03 180.85799999999998,-151.585 174.658,-145.386 C168.57299999999998,-139.301 165.244,-131.38 165.244,-122.769 C165.244,-114.158 168.344,-106.238 174.314,-100.038 C180.628,-93.37899999999999 188.205,-90.164 197.619,-90.164 C206.918,-90.164 214.726,-93.494 221.04,-99.808 C227.23999999999998,-106.007 230.339,-113.69999999999999 230.339,-122.999 C230.339,-131.38 226.78,-139.875 220.236,-146.075z"></path></g><g opacity="1" transform="matrix(1,0,0,1,34.539,58.02)"><path fill="rgb(255,255,255)" fill-opacity="1" d="M0 0 M11.368,8.531 C11.368,8.531 6.626,8.531 6.626,8.531 C6.626,8.531 -5.484,-0.826 -5.484,-0.826 C-5.484,-0.826 -5.484,8.531 -5.484,8.531 C-5.484,8.531 -11.368,8.531 -11.368,8.531 C-11.368,8.531 -11.368,-8.362 -11.368,-8.362 C-11.368,-8.362 -5.991,-8.362 -5.991,-8.362 C-5.991,-8.362 5.483,-0.105 5.483,-0.105 C5.483,-0.105 5.483,-8.531 5.483,-8.531 C5.483,-8.531 11.368,-8.531 11.368,-8.531 C11.368,-8.531 11.368,8.531 11.368,8.531z"></path></g><g opacity="1" transform="matrix(1,0,0,1,96.667,360.166)"><path fill="rgb(222,222,222)" fill-opacity="1" d="M0 0 M16.807,31.082 C16.807,31.082 -16.805,31.082 -16.805,31.082 C-23.064999999999998,31.082 -28.187,25.961000000000002 -28.187,19.702 C-28.187,19.702 -28.187,-19.702 -28.187,-19.702 C-28.187,-25.962000000000003 -23.064999999999998,-31.082 -16.805,-31.082 C-16.805,-31.082 16.807,-31.082 16.807,-31.082 C23.066,-31.082 28.187,-25.962000000000003 28.187,-19.702 C28.187,-19.702 28.187,19.702 28.187,19.702 C28.187,25.961000000000002 23.066,31.082 16.807,31.082z"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M109.431,360.166 C109.431,360.166 124.858,360.166 124.858,360.166"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M68.484,360.166 C68.484,360.166 83.911,360.166 83.911,360.166"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M83.262,329.084 C83.262,329.084 83.262,391.249 83.262,391.249"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M109.451,329.084 C109.451,329.084 109.451,391.249 109.451,391.249"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M96.357,329.084 C96.357,329.084 96.357,344.466 96.357,344.466"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M96.357,374.898 C96.357,374.898 96.357,391.249 96.357,391.249"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M83.899,344.465 C83.899,344.465 109.435,344.465 109.435,344.465"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M83.899,375.23 C83.899,375.23 110.071,375.23 110.071,375.23"></path></g></g><g transform="matrix(0.7560928,0,0,0.7560928,129.97433759999998,193.48306416)" opacity="1"><g opacity="1" transform="matrix(3.12506656107851,-0.0046361329721193965,0.004924501401345164,3.319446347176882,57.629,65.675)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(97,14,36)" stroke-opacity="1" stroke-width="3" d="M0 0 M-19.719,4.286 C-2.0360000000000014,3.7269999999999994 14.302,2.7529999999999992 21.3,7.608"></path></g><g opacity="1" transform="matrix(1,0,0,1,9.654,34.237)"><path fill="rgb(97,14,36)" fill-opacity="1" d="M0 0 M-0.701,-0.113 C-0.701,4.859999999999999 -4.732,8.891 -9.705,8.891 C-14.679,8.891 -18.71,4.859999999999999 -18.71,-0.113 C-18.71,-5.086 -14.679,-9.117 -9.705,-9.117 C-4.732,-9.117 -0.701,-5.086 -0.701,-0.113z"></path></g><g opacity="1" transform="matrix(1,0,0,1,110.134,34.237)"><path fill="rgb(98,14,36)" fill-opacity="1" d="M0 0 M-0.7,-0.113 C-0.7,4.859999999999999 -4.732,8.891 -9.705,8.891 C-14.678,8.891 -18.71,4.859999999999999 -18.71,-0.113 C-18.71,-5.086 -14.678,-9.117 -9.705,-9.117 C-4.732,-9.117 -0.7,-5.086 -0.7,-0.113z"></path></g></g><g transform="matrix(-0.22310822973884364,-0.790976424062563,0.790976424062563,-0.22310822973884364,90.1426351759937,350.8030742926305)" opacity="1"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(253,55,106)" stroke-opacity="1" stroke-width="15" d="M0 0 M-126.929,26.925 C-126.929,26.925 -81.53999999999999,39.853 -33.354,55.127"></path></g><g transform="matrix(-0.8120246647389153,0.1266369987628107,-0.1266369987628107,-0.8120246647389153,212.0957531630957,415.055332789797)" opacity="1"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(253,55,106)" stroke-opacity="1" stroke-width="15" d="M0 0 M-19.18,-40.069 C-19.18,-40.069 -25.791999999999994,-2.9720000000000013 -33.782,56.907"></path></g></g></g></symbol>
+      </defs></svg>
+
+
+
+ 
+
+
+
+ 
+
+
+<meta name="google-site-verification" content="K--TVghONKXEt2BKcNWAzaVI3EvjFIQqpckjmoA5kG8" />
+  
+</head>
+
+<body cz-shortcut-listen="true" class="anim">
+  <noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript>
+  <div id="___gatsby">
+    <div style="outline:none" tabindex="-1" role="group">
+    <svg class="Icons-module__icons___1WYrB"><defs><symbol id="monzo-logo" viewBox="0 0 311 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path fill="#e34b5f" d="M76 50a4 4 0 0 1-1 2L59 68a1 1 0 0 1-2-1V32l19-19z"></path><path fill="#e7ce9c" d="M63 0a1 1 0 0 0-2 0L38 24v27l19-19 19-19z"></path><path fill="#1e7889" d="M0 50a4 4 0 0 0 1 2l16 16a1 1 0 0 0 2-1V32L0 13z"></path><path fill="#97baa6" d="M15 0a1 1 0 0 0-2 0L0 13l19 19 19 19V24z"></path><path fill="#fff" d="M100 50V15h9v4a10 10 0 0 1 10-5 11 11 0 0 1 9 6c4-4 7-6 11-6 8 0 13 4 13 13v23h-10V31c0-5-1-7-5-7s-6 2-6 7v19h-11V31c0-5-1-7-4-7s-6 2-6 7v19zm64-31a19 19 0 0 1 32 13 18 18 0 0 1-5 13 18 18 0 0 1-14 6 17 17 0 0 1-13-6 18 18 0 0 1-5-13 18 18 0 0 1 5-13zm13 22a9 9 0 0 0 9-9 8 8 0 1 0-17 0 9 9 0 0 0 8 9zm26 9V15h10v4c2-3 5-5 10-5 7 0 12 5 12 13v23h-10V31c0-5-1-7-5-7s-7 2-7 7v19zm76-31a19 19 0 0 1 32 13 18 18 0 0 1-5 13 18 18 0 0 1-13 6 17 17 0 0 1-14-6 18 18 0 0 1-5-13 18 18 0 0 1 5-13zm14 22a9 9 0 0 0 8-9 8 8 0 1 0-17 0 9 9 0 0 0 9 9zm-50 9v-7l14-19h-14v-9h26v8l-13 18h13v9z"></path></g></symbol><symbol id="twitter-bird" viewBox="0 0 17.5 14.2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#FFFFFF" d="M15.7 3.5V4c0 4.8-3.6 10.2-10.2 10.2-2 0-3.9-.6-5.5-1.6h.9c1.7 0 3.2-.6 4.5-1.5-1.6 0-2.9-1.1-3.4-2.5.2 0 .4.1.7.1.3 0 .6 0 .9-.1C1.9 8.2.7 6.8.7 5c.5.3 1 .4 1.6.5-1-.6-1.6-1.7-1.6-3 0-.7.2-1.3.5-1.8C3 2.8 5.7 4.3 8.6 4.4c0-.3-.1-.5-.1-.8 0-2 1.6-3.6 3.6-3.6 1 0 2 .4 2.6 1.1.9-.1 1.7-.4 2.3-.8-.3.8-.8 1.5-1.6 2 .7-.1 1.4-.3 2.1-.6-.5.7-1.1 1.3-1.8 1.8z"></path></symbol><symbol id="facebook" viewBox="0 0 9.6 18.5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path fill="#FFFFFF" d="M9.6,3.1H7.9c-1.4,0-1.6,0.7-1.6,1.6v2.1h3.3l-0.4,3.3H6.2v8.4H2.8v-8.4H0V6.8h2.8V4.3C2.8,1.5,4.6,0,7.1,0 c1.2,0,2.2,0.1,2.5,0.1V3.1z"></path></g></symbol><svg id="linked-in" viewBox="0 0 17.1 16.3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path fill="#FFFFFF" d="M2,3.8L2,3.8C0.8,3.8,0,3,0,1.9C0,0.8,0.8,0,2.1,0c1.3,0,2,0.8,2,1.9C4.1,3,3.3,3.8,2,3.8z M3.9,16.3H0.2v-11 h3.7V16.3z M17.1,16.3h-3.7v-5.9c0-1.5-0.5-2.5-1.9-2.5c-1,0-1.6,0.7-1.9,1.3c-0.1,0.2-0.1,0.6-0.1,0.9v6.2H5.9c0-10,0-11,0-11h3.7 v1.6h0C10,6.2,10.9,5,12.9,5c2.4,0,4.2,1.6,4.2,5V16.3z"></path></g></svg><symbol id="heart" viewBox="0 0 48 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Master" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="203" transform="translate(-937.000000, -3839.000000)" fill="#EA5E67"><g id="Icons/hot-coral-heart" transform="translate(937.000000, 3837.000000)"><path d="M34.7947211,2.5 C30.3338973,2.5 26.3908697,4.56478605 23.9997539,7.72668964 C21.6091303,4.56478605 17.6651183,2.5 13.2052789,2.5 C5.91183437,2.5 0,8.02004184 0,14.8291599 C0,35.798428 23.9997539,45.3117021 23.9997539,45.3117021 C23.9997539,45.3117021 48,35.798428 48,14.8291599 C48,8.02004184 42.0876734,2.5 34.7947211,2.5" id="Fill-43"></path></g></g></g></symbol><symbol id="lost-hot-chip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet"><defs><clipPath id="animationMask_u4lN9chfBm"><rect width="600" height="600" x="0" y="0"></rect></clipPath><clipPath id="cp_4W9UsTm1"><path d="M0,0 L364,0 L364,460 L0,460z"></path></clipPath></defs><g clip-path="url(#animationMask_u4lN9chfBm)"><g transform="matrix(1,0,0,1,0,0)" opacity="1"><rect width="600" height="600" fill="#121f35"></rect></g><g clip-path="url(#cp_4W9UsTm1)" transform="matrix(1,0,0,1,118,70)" opacity="1"><g transform="matrix(0.9051252656,0,0,0.2131688592,185.2333656537312,396.1053800962368)" opacity="0.81"><g opacity="1" transform="matrix(1,0,0,1,2.998,261.998)"><path fill="rgb(10,21,39)" fill-opacity="1" d="M0 0 M0,-13.998 C56.29490379999999,-13.998 102.002,-7.7254961999999985 102.002,0 C102.002,7.7254961999999985 56.29490379999999,13.998 0,13.998 C-56.29490379999999,13.998 -102.002,7.7254961999999985 -102.002,0 C-102.002,-7.7254961999999985 -56.29490379999999,-13.998 0,-13.998z"></path></g></g><g transform="matrix(0.19161762200543586,-0.799189384649835,0.799189384649835,0.19161762200543586,316.8094051262301,275.03613847456984)" opacity="1"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(253,55,106)" stroke-opacity="1" stroke-width="15" d="M0 0 M20.926,-38.482 C20.926,-38.482 66.24799999999999,56.925999999999995 -3.37,46.55"></path></g><g transform="matrix(0.7635664869305973,-0.3039526371599135,0.3039526371599135,0.7635664869305973,78.17130044278586,285.0258545908893)" opacity="1"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(253,55,106)" stroke-opacity="1" stroke-width="15" d="M0 0 M23.457,-33.167 C23.457,-33.167 -72.181,-89.00999999999999 -61.652,-14.788"></path></g><g transform="matrix(1,0,0,1,17.323025492252274,20.674282736270246)" opacity="0.7749301640535643"><path fill="rgb(222,222,222)" fill-opacity="1" d="M0 0 M0,-3 C1.6557,-3 3,-1.6557 3,0 C3,1.6557 1.6557,3 0,3 C-1.6557,3 -3,1.6557 -3,0 C-3,-1.6557 -1.6557,-3 0,-3z"></path></g><g transform="matrix(0.82184,0,0,0.82184,80.9598,20.260559999999998)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,129.529,215.8)"><path fill="rgb(252,56,107)" fill-opacity="1" d="M0 0 M109.867,215.8 C109.867,215.8 -109.865,215.8 -109.865,215.8 C-120.725,215.8 -129.529,206.996 -129.529,196.137 C-129.529,196.137 -130.13,178.119 -130.13,178.119 C-130.13,178.119 -205.627,116.672 -189.151,116.672 C-172.675,116.672 -129.529,119.714 -129.529,119.714 C-129.529,119.714 -129.529,-196.137 -129.529,-196.137 C-129.529,-206.996 -120.725,-215.8 -109.865,-215.8 C-109.865,-215.8 109.867,-215.8 109.867,-215.8 C120.726,-215.8 129.529,-206.996 129.529,-196.137 C129.529,-196.137 130.03,112.413 130.03,112.413 C130.03,112.413 196.617,109.97999999999999 197.06,110.588 C199.05,109.97999999999999 130.03,172.035 130.03,172.035 C130.03,172.035 129.529,196.137 129.529,196.137 C129.529,206.996 120.726,215.8 109.867,215.8z"></path></g><g opacity="1" transform="matrix(1,0,0,1,34.327,150.261)"><path fill="rgb(255,255,255)" fill-opacity="1" d="M0 0 M11.58,16.788 C11.58,16.788 -11.156,16.788 -11.156,16.788 C-11.156,16.788 -11.156,10.733 -11.156,10.733 C-11.156,10.733 -8.108,10.733 -8.108,10.733 C-10.437000000000001,9.336 -11.58,7.304 -11.58,4.551 C-11.58,1.7990000000000004 -10.395,-0.2749999999999999 -7.939,-1.757 C-10.437000000000001,-4.129 -11.58,-5.949 -11.58,-8.786 C-11.58,-13.908999999999999 -8.701,-16.788 -3.408,-16.788 C-3.408,-16.788 11.58,-16.788 11.58,-16.788 C11.58,-16.788 11.58,-10.268 11.58,-10.268 C11.58,-10.268 -0.74,-10.268 -0.74,-10.268 C-3.9160000000000004,-10.268 -5.356,-9.59 -5.356,-7.092 C-5.356,-4.552 -3.7889999999999997,-3.197 -0.74,-3.197 C-0.74,-3.197 11.58,-3.197 11.58,-3.197 C11.58,-3.197 11.58,3.366 11.58,3.366 C11.58,3.366 -0.74,3.366 -0.74,3.366 C-3.9160000000000004,3.366 -5.356,4.043 -5.356,6.541 C-5.356,9.082 -3.7889999999999997,10.437 -0.74,10.437 C-0.74,10.437 11.58,10.437 11.58,10.437 C11.58,10.437 11.58,16.788 11.58,16.788z"></path></g><g opacity="1" transform="matrix(-0.006457390381794894,-0.36994364720786477,0.36994364720786477,-0.006457390381794894,80.842,104.334)"><path fill="rgb(255,255,255)" fill-opacity="1" d="M0 0 M-1.361,-149.627 C-7.4799999999999995,-155.407 -15.056,-158.49599999999998 -23.863,-158.575 C-23.863,-158.575 -23.863,-141.362 -23.863,-141.362 C-15.827,-141.362 -9.283,-134.588 -9.283,-126.092 C-9.283,-117.711 -15.827,-110.938 -23.863,-110.938 C-31.785,-110.938 -38.443,-117.711 -38.443,-126.092 C-38.443,-134.588 -31.899,-141.362 -23.863,-141.362 C-23.863,-141.362 -23.863,-158.575 -23.863,-158.575 C-23.977999999999998,-158.576 -24.092,-158.583 -24.208,-158.583 C-32.589,-158.583 -40.739,-155.138 -46.939,-148.939 C-53.024,-142.85399999999998 -56.354,-134.933 -56.354,-126.322 C-56.354,-117.711 -53.254,-109.79 -47.284,-103.59 C-40.97,-96.931 -33.392,-93.717 -23.978,-93.717 C-14.679000000000002,-93.717 -6.871,-97.04599999999999 -0.557,-103.36 C5.643,-109.559 8.742,-117.25200000000001 8.742,-126.551 C8.742,-134.93200000000002 5.183,-143.42700000000002 -1.361,-149.627z"></path></g><g opacity="1" transform="matrix(1,0,0,1,34.327,84.384)"><path fill="rgb(255,255,255)" fill-opacity="1" d="M0 0 M11.58,10.267 C11.58,10.267 -11.156,10.267 -11.156,10.267 C-11.156,10.267 -11.156,3.915 -11.156,3.915 C-11.156,3.915 -8.108,4 -8.108,4 C-10.395,2.6029999999999998 -11.58,0.48599999999999977 -11.58,-2.52 C-11.58,-7.220000000000001 -8.616,-10.267 -3.408,-10.267 C-3.408,-10.267 11.58,-10.267 11.58,-10.267 C11.58,-10.267 11.58,-3.578 11.58,-3.578 C11.58,-3.578 -0.74,-3.578 -0.74,-3.578 C-3.9160000000000004,-3.578 -5.356,-2.9010000000000002 -5.356,-0.318 C-5.356,2.307 -3.7889999999999997,3.704 -0.74,3.704 C-0.74,3.704 11.58,3.704 11.58,3.704 C11.58,3.704 11.58,10.267 11.58,10.267z"></path></g><g opacity="1" transform="matrix(-0.006457390381794894,-0.36994364720786477,0.36994364720786477,-0.006457390381794894,80.842,104.334)"><path fill="rgb(255,255,255)" fill-opacity="1" d="M0 0 M220.236,-146.075 C214.117,-151.855 206.541,-154.944 197.734,-155.023 C197.734,-155.023 197.734,-137.809 197.734,-137.809 C205.77,-137.809 212.315,-131.036 212.315,-122.54 C212.315,-114.159 205.77,-107.385 197.734,-107.385 C189.812,-107.385 183.154,-114.159 183.154,-122.54 C183.154,-131.036 189.698,-137.809 197.734,-137.809 C197.734,-137.809 197.734,-155.023 197.734,-155.023 C197.619,-155.024 197.506,-155.03 197.39,-155.03 C189.009,-155.03 180.85799999999998,-151.585 174.658,-145.386 C168.57299999999998,-139.301 165.244,-131.38 165.244,-122.769 C165.244,-114.158 168.344,-106.238 174.314,-100.038 C180.628,-93.37899999999999 188.205,-90.164 197.619,-90.164 C206.918,-90.164 214.726,-93.494 221.04,-99.808 C227.23999999999998,-106.007 230.339,-113.69999999999999 230.339,-122.999 C230.339,-131.38 226.78,-139.875 220.236,-146.075z"></path></g><g opacity="1" transform="matrix(1,0,0,1,34.539,58.02)"><path fill="rgb(255,255,255)" fill-opacity="1" d="M0 0 M11.368,8.531 C11.368,8.531 6.626,8.531 6.626,8.531 C6.626,8.531 -5.484,-0.826 -5.484,-0.826 C-5.484,-0.826 -5.484,8.531 -5.484,8.531 C-5.484,8.531 -11.368,8.531 -11.368,8.531 C-11.368,8.531 -11.368,-8.362 -11.368,-8.362 C-11.368,-8.362 -5.991,-8.362 -5.991,-8.362 C-5.991,-8.362 5.483,-0.105 5.483,-0.105 C5.483,-0.105 5.483,-8.531 5.483,-8.531 C5.483,-8.531 11.368,-8.531 11.368,-8.531 C11.368,-8.531 11.368,8.531 11.368,8.531z"></path></g><g opacity="1" transform="matrix(1,0,0,1,96.667,360.166)"><path fill="rgb(222,222,222)" fill-opacity="1" d="M0 0 M16.807,31.082 C16.807,31.082 -16.805,31.082 -16.805,31.082 C-23.064999999999998,31.082 -28.187,25.961000000000002 -28.187,19.702 C-28.187,19.702 -28.187,-19.702 -28.187,-19.702 C-28.187,-25.962000000000003 -23.064999999999998,-31.082 -16.805,-31.082 C-16.805,-31.082 16.807,-31.082 16.807,-31.082 C23.066,-31.082 28.187,-25.962000000000003 28.187,-19.702 C28.187,-19.702 28.187,19.702 28.187,19.702 C28.187,25.961000000000002 23.066,31.082 16.807,31.082z"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M109.431,360.166 C109.431,360.166 124.858,360.166 124.858,360.166"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M68.484,360.166 C68.484,360.166 83.911,360.166 83.911,360.166"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M83.262,329.084 C83.262,329.084 83.262,391.249 83.262,391.249"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M109.451,329.084 C109.451,329.084 109.451,391.249 109.451,391.249"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M96.357,329.084 C96.357,329.084 96.357,344.466 96.357,344.466"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M96.357,374.898 C96.357,374.898 96.357,391.249 96.357,391.249"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M83.899,344.465 C83.899,344.465 109.435,344.465 109.435,344.465"></path></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(157,157,156)" stroke-opacity="1" stroke-width="2.545" d="M0 0 M83.899,375.23 C83.899,375.23 110.071,375.23 110.071,375.23"></path></g></g><g transform="matrix(0.7560928,0,0,0.7560928,129.97433759999998,193.48306416)" opacity="1"><g opacity="1" transform="matrix(3.12506656107851,-0.0046361329721193965,0.004924501401345164,3.319446347176882,57.629,65.675)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(97,14,36)" stroke-opacity="1" stroke-width="3" d="M0 0 M-19.719,4.286 C-2.0360000000000014,3.7269999999999994 14.302,2.7529999999999992 21.3,7.608"></path></g><g opacity="1" transform="matrix(1,0,0,1,9.654,34.237)"><path fill="rgb(97,14,36)" fill-opacity="1" d="M0 0 M-0.701,-0.113 C-0.701,4.859999999999999 -4.732,8.891 -9.705,8.891 C-14.679,8.891 -18.71,4.859999999999999 -18.71,-0.113 C-18.71,-5.086 -14.679,-9.117 -9.705,-9.117 C-4.732,-9.117 -0.701,-5.086 -0.701,-0.113z"></path></g><g opacity="1" transform="matrix(1,0,0,1,110.134,34.237)"><path fill="rgb(98,14,36)" fill-opacity="1" d="M0 0 M-0.7,-0.113 C-0.7,4.859999999999999 -4.732,8.891 -9.705,8.891 C-14.678,8.891 -18.71,4.859999999999999 -18.71,-0.113 C-18.71,-5.086 -14.678,-9.117 -9.705,-9.117 C-4.732,-9.117 -0.7,-5.086 -0.7,-0.113z"></path></g></g><g transform="matrix(-0.22310822973884364,-0.790976424062563,0.790976424062563,-0.22310822973884364,90.1426351759937,350.8030742926305)" opacity="1"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(253,55,106)" stroke-opacity="1" stroke-width="15" d="M0 0 M-126.929,26.925 C-126.929,26.925 -81.53999999999999,39.853 -33.354,55.127"></path></g><g transform="matrix(-0.8120246647389153,0.1266369987628107,-0.1266369987628107,-0.8120246647389153,212.0957531630957,415.055332789797)" opacity="1"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(253,55,106)" stroke-opacity="1" stroke-width="15" d="M0 0 M-19.18,-40.069 C-19.18,-40.069 -25.791999999999994,-2.9720000000000013 -33.782,56.907"></path></g></g></g></symbol></defs></svg>
+
+    <header class="Header-module__header___2gV_n">
+      <nav class="Header-module__navigation___3_1kg Header-module__container___1_Tic">
+        <a href="https://kashloyalty.com" aria-label="Navigate to the Kash homepage">
+          <img src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/kash%20blue%20logo.PNG?alt=media&token=bc960298-bcf7-42b8-90af-fcb435a0f9ca"  height="50" width="auto" >
+        </a>
+        <a href="https://m.me/hirekash"><button class="Button-module__primary___1GlDI Button-module__button___UaHzb">Join the waitlist</button>
+        </a>
+      </nav>
+    </header>
+
+
 
 
   
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/kash-background-css.css?alt=media&token=1ae30450-aae4-4bb9-835f-7c27dfafb699">
- 
+
+        <div class="Layout-module__gradient___32sa7 Layout-module__main___1OIFf">
+
 
    
-</head>
-
-<body cz-shortcut-listen="true">
-    
-    <nav class="global-nav global-nav--transparent">
-        <div class="container">
-            <div class="global-nav__left">
-                <a class="global-nav__logo" href="/">
-                    <svg width="77px" height="77px" viewBox="0 0 347 347" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
-                        <title>mini-blue</title>
-                        <desc>Created with Sketch.</desc>
-                        <defs>
-                            <polygon id="path-1" points="28.0628881 28 0.865108537 28 0.865108537 0.806234546 28.0628881 0.806234546"></polygon>
-                            <polygon id="path-3" points="28.1085542 28 0.908931283 28 0.908931283 0.806234546 28.1085542 0.806234546"></polygon>
-                        </defs>
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Kin-v3" transform="translate(-874.000000, -195.000000)">
-                                <g id="mini-blue" transform="translate(874.000000, 195.000000)">
-                                    <g id="Page-1">
-                                        <path d="M173,68 L173,68 C161.403282,68 152,58.5967182 152,47 C152,35.4032818 161.403282,26 173,26 C184.596718,26 194,35.4032818 194,47 C194,58.5967182 184.596718,68 173,68" id="Fill-1" fill-opacity="0.6" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                        <path d="M173,321 L173,321 C161.403282,321 152,311.596718 152,300 C152,288.403282 161.403282,279 173,279 C184.596718,279 194,288.403282 194,300 C194,311.596718 184.596718,321 173,321" id="Fill-3" fill-opacity="0.6" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                        <path d="M299,194 L299,194 C287.403282,194 278,184.596718 278,173 C278,161.403282 287.403282,152 299,152 C310.596718,152 320,161.403282 320,173 C320,184.596718 310.596718,194 299,194" id="Fill-5" fill-opacity="0.6" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                        <path d="M48,194 L48,194 C36.4032818,194 27,184.596718 27,173 C27,161.403282 36.4032818,152 48,152 C59.5967182,152 69,161.403282 69,173 C69,184.596718 59.5967182,194 48,194" id="Fill-7" fill-opacity="0.6" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                        <g id="Group-11" transform="translate(225.000000, 319.000000)">
-                                            <g id="Fill-9-Clipped">
-                                                <mask id="mask-2" fill="white">
-                                                    <use xlink:href="#path-1"></use>
-                                                </mask>
-                                                <g id="path-1"></g>
-                                                <path d="M1.90608,19.60414 C-0.97152,12.66754 2.32188,4.71454 9.25848,1.84354 C16.20168,-1.02746 24.15468,2.26594 27.02568,9.19594 C29.89668,16.13914 26.60328,24.09214 19.66668,26.96314 C12.73668,29.83414 4.78368,26.54074 1.90608,19.60414" id="Fill-9" fill-opacity="0.8" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
-                                            </g>
-                                        </g>
-                                        <path d="M95.029596,18.6637246 C92.1796666,11.7766386 95.4488959,3.88040767 102.334587,1.02990109 C109.220279,-1.8206055 117.114911,1.44928597 119.971391,8.3298191 C122.821321,15.223458 119.54554,23.113136 112.659849,25.9701955 C105.780709,28.8207021 97.8860769,25.5508106 95.029596,18.6637246" id="Fill-12" fill-opacity="0.8" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                        <path d="M338.666795,119.96755 C331.779919,122.82433 323.883929,119.548207 321.033509,112.661797 C318.176537,105.775386 321.446329,97.8799303 328.333205,95.0297035 C335.226634,92.1794766 343.122624,95.4490472 345.966491,102.335457 C348.823463,109.221868 345.553671,117.110771 338.666795,119.96755" id="Fill-14" fill-opacity="0.8" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                        <path d="M18.6617966,251.966692 C11.7753864,254.823376 3.87993033,251.553914 1.02970346,244.661179 C-1.82052341,237.774997 1.44904718,229.879802 8.33545738,227.029669 C15.2218676,224.179537 23.1173236,227.448999 25.9675505,234.335182 C28.8243296,241.221364 25.5482068,249.116559 18.6617966,251.966692" id="Fill-16" fill-opacity="0.8" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                        <path d="M328.333205,251.966692 C321.446329,249.116559 318.176537,241.221364 321.033509,234.335182 C323.883929,227.448999 331.779919,224.179537 338.666795,227.029669 C345.553671,229.879802 348.823463,237.774997 345.966491,244.661179 C343.122624,251.553914 335.226634,254.823376 328.333205,251.966692" id="Fill-18" fill-opacity="0.6" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                        <path d="M8.33545738,119.96755 C1.44904718,117.110771 -1.82052341,109.221868 1.02970346,102.335457 C3.87993033,95.4490472 11.7753864,92.1794766 18.6617966,95.0297035 C25.5482068,97.8799303 28.8243296,105.775386 25.9675505,112.661797 C23.1173236,119.548207 15.2218676,122.82433 8.33545738,119.96755" id="Fill-20" fill-opacity="0.6" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                        <path d="M251.966598,18.6637246 C249.116476,25.5508106 241.221309,28.8207021 234.335152,25.9701955 C227.448994,23.113136 224.179543,15.223458 227.029666,8.3298191 C229.88634,1.44928597 237.781507,-1.8206055 244.667664,1.02990109 C251.553822,3.88040767 254.823273,11.7766386 251.966598,18.6637246" id="Fill-22" fill-opacity="0.6" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                        <g id="Group-26" transform="translate(93.000000, 319.000000)">
-                                            <g id="Fill-24-Clipped">
-                                                <mask id="mask-4" fill="white">
-                                                    <use xlink:href="#path-3"></use>
-                                                </mask>
-                                                <g id="path-3"></g>
-                                                <path d="M27.06858,19.60414 C24.19098,26.54074 16.23798,29.83414 9.30798,26.96314 C2.37138,24.09214 -0.92202,16.13914 1.94238,9.19594 C4.81998,2.26594 12.77298,-1.02746 19.70958,1.84354 C26.64618,4.71454 29.94618,12.66754 27.06858,19.60414" id="Fill-24" fill-opacity="0.6" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-4)"></path>
-                                            </g>
-                                        </g>
-                                        <path d="M257.885542,110 L236,110 L236,88.1179268 C236,77.0071327 245.001902,68 256.114458,68 L257.885542,68 C268.998098,68 278,77.0071327 278,88.1179268 L278,89.8820732 C278,100.992867 268.998098,110 257.885542,110" id="Fill-27" fill-opacity="0.8" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                        <path d="M112,110 L90.1179268,110 C79.0071327,110 70,100.992867 70,89.8820732 L70,88.1179268 C70,77.0071327 79.0071327,68 90.1179268,68 L91.8887304,68 C102.992867,68 112,77.0071327 112,88.1179268 L112,110 Z" id="Fill-29" fill-opacity="0.8" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                        <path d="M91.8855422,279 L90.1144578,279 C79.0019023,279 70,269.992867 70,258.88873 L70,257.117927 C70,246.007133 79.0019023,237 90.1144578,237 L112,237 L112,258.88873 C112,269.992867 102.998098,279 91.8855422,279" id="Fill-31" fill-opacity="0.8" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                        <path d="M257.885542,279 L256.114458,279 C245.001902,279 236,269.992867 236,258.882073 L236,237 L257.885542,237 C268.998098,237 278,246.007133 278,257.117927 L278,258.882073 C278,269.992867 268.998098,279 257.885542,279" id="Fill-33" fill-opacity="0.8" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                        <path d="M213.854079,152.525007 L224.544303,152.525007 C230.872652,152.525007 236,147.389487 236,141.051054 L236,110 L204.450641,110 C198.128891,110 193.001543,115.135519 193.001543,121.467343 L193.001543,131.678897 C193.001543,143.185896 184.264595,153.106635 172.762706,153.106635 C161.267415,153.106635 151.36906,143.185896 151.36906,131.678897 L151.36906,121.057559 C151.36906,114.950455 146.419882,110 140.322495,110 L112,110 L112,237 L140.098132,237 C146.327497,237 151.36906,231.950403 151.36906,225.717721 L151.36906,216.15389 C151.36906,204.025605 160.303975,193.83388 171.799266,193.83388 L171.799266,193.880146 C183.294556,193.880146 193.001543,203.595993 193.001543,215.109602 L193.001543,225.618579 C193.001543,231.904137 198.082699,237 204.364856,237 L236,237 L236,205.605256 C236,199.319698 230.912245,194.223836 224.636688,194.223836 L215.187058,194.223836 C203.691767,194.223836 193.001543,184.884725 193.001543,173.371116 L193.041137,173.371116 C193.041137,161.857507 202.358789,152.525007 213.854079,152.525007" id="Fill-35" fill="#FFFFFF" fill-rule="nonzero"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </a>
-            </div>
-            <div class="global-nav__right">
-                <ul class="global-nav__menu">
-                  
-                    <li class="global-nav__button">
-                        <a href="https://m.me/1075685092615648" target="_blank" class="button button--rounded button--accent-2 hero-section__call-to-action button--jumbo">
-                                    <img class="button--has-icon" src="https://icon.now.sh/messenger/fff/32" alt="messenger icon">
-                                    Go to Messenger
-                                </a>
-                    </li>
-
-                </ul>
-                <div class="global-mobile-nav">
-                    <div class="global-mobile-nav__trigger" id="mobile-nav-trigger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="global-mobile-nav-menu" id="mobile-nav-menu">
-                        <div class="grid grid--with-gutters">
-                            <div class="grid__column">
-                                
-                                <li class="global-mobile-nav-menu__item">
-                                   <a href="https://m.me/1075685092615648" target="_blank" class="button button--rounded button--accent-2 hero-section__call-to-action button--jumbo">
-                                    <img class="button--has-icon" src="https://icon.now.sh/messenger/fff/32" alt="messenger icon">
-                                    Go to Messenger
-                                </a>
-                                </li>
-
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <section class="feature-header home-section--dark  hero-section">
-        <div class="container">
-            <div class="grid">
-                <div class="grid__column global-u-text-left fade-in grid__column--7">
-                    <h1 id="sticky-trigger" class="hero-section__primary-title  feature-header__has-padding global-u-text-center-s">
-                       Get more regulars <br> walking into your store
-                    </h1>
-                    <p class="hero__caption global-u-text-center-s ">
-                      Kash helps you bring customers back a second, third, and even a seventeenth time with loyalty programs on Facebook Messenger. 
-                    </p>
-
-                   
-
-                  
-   <a href="https://m.me/1075685092615648" target="_blank" class="button button--rounded button--accent-2 hero-section__call-to-action button--jumbo">
-                                    <img class="button--has-icon" src="https://icon.now.sh/messenger/fff/32" alt="messenger icon">
-                                    Go to Messenger
-                                </a>
-
-                
-
-                </div>
-                <div class="grid__column grid__column--5 grid__column--relative">
-                    <div class="feature-section-illustration fade-in feature-section-illustration--dashboard">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/kash-banner20.png?alt=media&token=b9c8aa6d-1576-48da-8d8c-7f808cf78bb7" alt="Dashboard">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+<section  class="Features-module__item___1I5J6 Features-module__hero___19JTY Features-module__animated___iQFro Features-module__fadeInRight___3_hvN">               
    
 
-    <section class="home-section home-section--features">
-        <div class="container container--lg">
-            <div class="grid">
-                <div class="grid__column grid__column--12">
-                    <div class="home-section-header home-section-header--centered">
-                        <h2 class="home-section-header__primary-title">Kash for customers</h2>
-                        <p class="home-section-header__secondary-title home-section-header__secondary-title--hero-caption global-u-text-center">The easiest money you’ve ever made. It's as easy as chatting with a friend on Facebook Messenger.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="home-section__feature-items grid">
-                <div class="grid__column grid__column--4">
-                    <div class="feature-item feature-item--alt">
-                        <div class="feature-item--alt__icon">
-                            <div class="svg"> <img src="https://px6vg4ekvl21gtxs836x5jyx-wpengine.netdna-ssl.com/wp-content/uploads/2017/03/two-green-cards.svg">   </div>
-                        </div>
-                        <h3 class="feature-item--alt__title">Link your debit & credit cards </h3>
-                        <p class="feature-item--alt__description">Sign up for free by linking your credit or debit cards on Facebook Messenger.</p>
-                    </div>
-                </div>
-                <div class="grid__column grid__column--4">
-                    <div class="feature-item--alt feature-item">
-                        <div class="feature-item--alt__icon">
-                            <div class="svg"> <img src="https://px6vg4ekvl21gtxs836x5jyx-wpengine.netdna-ssl.com/wp-content/uploads/2017/03/aboutUs-hover.svg">   </div>
-                        </div>
-                        <h3 class="feature-item--alt__title">Shop at your favorite places </h3>
-                        <p class="feature-item--alt__description">Pay online or in-store through Facebook Messenger with your linked cards </p>
-                    </div>
-                </div>
+  <div class="container">
+    <div class="grid-row grid-row--center grid-row--middle">
+      <div class="grid-col-12 grid-col-6-md">
 
-                <div class="grid__column grid__column--4 ">
-                    <div class="feature-item--alt feature-item">
-                        <div class="feature-item--alt__icon">
-                             <div class="svg"> <img src="https://px6vg4ekvl21gtxs836x5jyx-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/Close_Tickets.png">   </div>
-                        </div>
-                        <h3 class="feature-item--alt__title">Get cash deposits </h3>
-                        <p class="feature-item--alt__description">Get cash back automatically credited to your linked debit or credit cards </p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <section class="feature-section--has-padding home-section--dark home-section--gradient-2">
-        <div class="container ">
-            <div class="grid">
-                <div class="grid__column grid__column--12">
-                    <div class="home-section-header home-section-header--centered">
-                        <h2 class="home-section-header__primary-title">Kash for store owners</h2>
-                        <p class="home-section-header__secondary-title home-section-header__secondary-title--hero-caption">In
-                            3 easy steps, reward customers who come back and turn new walk-ins into repeat regulars.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid global-u-text-center-s">
-                <div class="grid__column grid__column--6 global-u-hide-on-mobile">
-                    <img class="svg svg--illustration__home checkout--bounce" src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/cash_for_storeowners.svg?alt=media&token=78d3fcfa-63e5-45c3-b7df-ca639f72e90a" alt="Create a loyalty program">
-                </div>
-
-                <div class="grid__column grid__column--6">
-
-                    <div class="home-section-header">
-                        <div class="badge">1</div>
-                        <h2 class="home-section-header__primary-title">Create A Loyalty Program</h2>
-                        <p class="home-section-header__secondary-title">Set up a loyalty program to reward customers for their spending at your store (eg spend NGN5,000 to earn NGN1,000). Give customers a reason to spend with you instead of the business down the street.  </p>
-                    </div>
-
-                </div>
-
-                <!-- Shown only on Mobile -->
-                <div class="grid__column grid__column--6 global-u-show-only-on-mobile">
-                    <img class="svg svg--illustration__home account-setup__illustration checkout--bounce" src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/cash_for_storeowners.svg?alt=media&token=78d3fcfa-63e5-45c3-b7df-ca639f72e90a" alt="Create a loyalty program">
-                </div>
-
-            </div>
-
-            <div class="grid global-u-text-center-s">
-                <div class="grid__column grid__column--6 ">
-                    <div class="home-section-header">
-                        <div class="badge">2</div>
-                        <h2 class="home-section-header__primary-title">Get your customers onboard</h2>
-                        <p class="home-section-header__secondary-title">Train your cashiers to sign up and reward customers by accepting payments through Facebook Messenger. Imagine having over 1000 loyal customers spending more at your store. How would that affect your revenue?</p>
-                    </div>
-                </div>
-
-                <div class="grid__column grid__column--6">
-                    <img class="svg svg--illustration__home account-setup__illustration checkout--bounce" src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/cash_for_cashiers.svg?alt=media&amp;token=5120c836-02af-498e-ac12-d45f733acc73" alt="Sign up customers through cashiers">
-                </div>
-            </div>
-
-            <div class="grid global-u-text-center-s">
-                <div class="grid__column grid__column--6 fade-in global-u-hide-on-mobile">
-                    <img class="svg--illustration__home checkout--bounce" src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/cash_for_customers.svg?alt=media&amp;token=d2710b69-a0de-47f7-ae5f-8bb7b1804b72" alt="Dashboard Illustration">
-                </div>
-
-                <div class="grid__column grid__column--6">
-
-                    <div class="home-section-header">
-                        <div class="badge">3</div>
-                        <h2 class="home-section-header__primary-title">Keep customers coming back</h2>
-                        <p class="home-section-header__secondary-title">Boost your sales with reward expiry reminders to your customers on Facebook Messenger. Get customers coming back to spend cash rewards before they expire. No apps. No downloads.  </p>
-                    </div>
-                </div>
-
-                <!-- Shown only on mobile -->
-                <div class="grid__column grid__column--6 fade-in global-u-show-only-on-mobile">
-                    <img class="svg--illustration__home checkout--bounce" src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/cash_for_customers.svg?alt=media&token=d2710b69-a0de-47f7-ae5f-8bb7b1804b72" alt="Keep customers coming back">
-                </div>
-
-                <center> <a href="https://m.me/1075685092615648" target="_blank" class="button button--rounded button--accent-2 hero-section__call-to-action button--jumbo">
-                                    <img class="button--has-icon" src="https://icon.now.sh/messenger/fff/32" alt="messenger icon">
-                                    Go to Messenger
-                                </a></center>
-                <br><br>
+      <h2 class="Features-module__title___2uEyu Features-module__trenta___3D3a0 Features-module__short___2FCjV">The future of marketing</h2>
 
 
-            </div>
-        </div>
-    </section>
+     <p class="Features-module__text___2mzRx Features-module__short___2FCjV">Say hello to Kash, your very own loyalty card that lives as a friend, right inside Facebook Messenger.</p>
 
-    <section class="feature-section--has-padding">
-        <div class="container container--md">
-            <div class="grid">
-                <div class="grid__column grid__column--7 fade-in">
-                    <div class="home-section-header">
-                        <h1 class="home-section-header__primary-title global-u-text-center-s">Reach customers in their world </h1>
-                        <p class="home-section-header__secondary-title global-u-text-center-s">Collect payments from over 1.2 billion people on Facebook Messenger. It's easy — all they need is a Messenger Code, unique URL or phone number. 
-                        </p>
+     <p class="Features-module__text___2mzRx Features-module__short___2FCjV"> No plastic cards. No Apps. No downloads. It's as easy as chatting with a friend on Messenger.</p>
 
-                        <p class="home-section-header__secondary-title global-u-text-center-s"> If your business is not collecting payments through Facebook Messenger, you are leaving money on the table. </p>
-
-                        <p class="home-section-header__secondary-title global-u-text-center-s">Forget customers running to the ATM or logging into an app. Sending money is now as simple as sending a message.</p>
-                    </div>
-                    <div class="grid feature-item-grid">
-                        <div class="grid__column grid__column--4">
-                            <div class="feature-item feature-item__no-card">
-                                <div class="feature-item__icon">
-                                    <div class="svg "> <svg width="56" height="56" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M36 2.25H0v31.5h36V2.25z" fill="#D4EEFF"></path><path d="M28.125 36H7.875a1.128 1.128 0 0 1-1.125-1.125V1.125C6.75.506 7.256 0 7.875 0h20.25c.618 0 1.125.506 1.125 1.125v33.75c0 .619-.507 1.125-1.125 1.125z" fill="#56B4FC"></path><path d="M29.25 2.25H6.75v31.5h22.5V2.25z" fill="#1652F0"></path><path d="M23 15.137L21.889 14l-6.667 6.822 1.11 1.137L23 15.137z" fill="#fff"></path><path d="M16.334 22l1.11-1.137-3.333-3.411-1.11 1.137L16.333 22z" fill="#fff"></path><path d="M23.625 3.375h-11.25a1.128 1.128 0 0 1-1.124-1.125V1.125h13.5V2.25c0 .619-.507 1.125-1.126 1.125z" fill="#56B4FC"></path><path d="M15.75 32.063c0 .337.226.562.563.562h3.375c.338 0 .563-.225.563-.562 0-.338-.226-.563-.563-.563h-3.375c-.337 0-.562.225-.562.563z" fill="#fff"></path></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h36v36H0z"></path></clipPath></defs></svg>   </div>
-                                </div>
-                                <h3 class="feature-item__title">Use Facebook Messenger</h3>
-                            </div>
-
-                        </div>
-
-                        <div class="grid__column grid__column--4">
-                            <div class="feature-item feature-item__no-card">
-                                <div class="feature-item__icon">
-                                    <div class="svg "> <svg width="66" height="66" viewBox="0 0 80 61" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M80 31.392H0v-2.558h80v2.558zm0 12.792H0v2.558h80v-2.558zm0-30.7H0v2.558h80v-2.559z" fill="#D4EEFF"></path><path d="M80 31.392H0v-2.558h80v2.558zm0 12.792H0v2.558h80v-2.558zm0-30.7H0v2.558h80v-2.559z" fill="#D4EEFF"></path><path d="M40.459 60.225c16.879 0 30.562-13.482 30.562-30.113C71.02 13.482 57.338 0 40.459 0S9.897 13.482 9.897 30.112c0 16.631 13.683 30.113 30.562 30.113z" fill="#56B4FC"></path><path d="M9.897 30.112v1.348h61.124v-1.348-1.348H9.897v1.348zM64.992 46.741c.505-.809 1.01-1.752 1.516-2.696H12.575c.505.944.884 1.887 1.516 2.696h50.901zM14.09 13.483c-.504.81-1.01 1.753-1.515 2.697h53.933c-.505-.944-.884-1.887-1.516-2.697H14.091z" fill="#1652F0"></path><path d="M39.989 2.51c5.446 0 11.4 11.291 11.4 27.602s-5.954 27.603-11.4 27.603c-5.447 0-11.4-11.292-11.4-27.603 0-16.31 5.953-27.603 11.4-27.603zm0-2.51c-7.726 0-13.933 13.425-13.933 30.112 0 16.688 6.207 30.113 13.933 30.113S53.92 46.8 53.92 30.112C53.921 13.425 47.715 0 39.99 0z" fill="#1652F0"></path></svg>    </div>
-                                </div>
-                                <h3 class="feature-item__title">No downloads. <br> No apps</h3>
-                            </div>
-                        </div>
-
-                        <div class="grid__column grid__column--4">
-                            <div class="feature-item feature-item__no-card">
-                                <div class="feature-item__icon">
-                                    <div class="svg "><svg width="56" height="56" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 0C9.106 0 4.284 4.64 4.284 11.344V25.78h21.429V11.344C25.714 4.64 20.892 0 14.999 0z" fill="#D4EEFF"></path><path d="M30 12.375H0V33h30V12.375z" fill="#56B4FC"></path><path d="M25.714 12.375H4.285v16.5h21.429v-16.5z" fill="#1652F0"></path><path d="M15 18.563l2.84 6.187h-5.68L15 18.562z" fill="#fff"></path><path d="M15 20.625c1.184 0 2.143-.923 2.143-2.063 0-1.139-.96-2.062-2.143-2.062-1.183 0-2.143.923-2.143 2.063 0 1.139.96 2.062 2.143 2.062z" fill="#fff"></path></svg></div>
-                                </div>
-                                <h3 class="feature-item__title">Secure <br> Payments</h3>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="grid__column grid__column--5">
-                    <div class="home-section-header home-section-header--centered">
-                        <img class="svg--security-home slide-in--with-fade" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Facebook_Messenger_4_Logo.svg/512px-Facebook_Messenger_4_Logo.svg.png" alt="Security">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-    </section>
-
-    <section class="home-section--blue">
-        <div class="container container--lg">
-            <div class="grid testimonials-area">
-                <div class="grid__column grid__column--12 grid__column--centered">
-                    <div class="home-section-header home-section-header--centered">
-                        <h1 class="home-section-header__primary-title">Read Our User Stories</h1>
-                        <h3 class="home-section-header__secondary-title">Join 100s of happy merchants. We help customers come back again & again with digital loyalty rewards. It's smart marketing without lifting a finger.</h3>
-                    </div>
-                </div>
-                <div class="grid__column grid__column--4">
-                    <div class="testimonial">
-                        <div class="testimonial__overlay">
-                            <span>Funmi Alao</span>
-                            <span> “Getting feedback directly from our regulars is invaluable. We know we can trust it.”</span>
-                        </div>
-                        <div class="testimonial__avatar">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/avatar2.jpg?alt=media&token=a8566446-080f-4e4a-8f55-98481273b0a8" alt="Funmi Alao">
-                        </div>
-                        <div class="testimonial__text">
-                            <span class="testimonial__text-name">Funmi Alao</span>
-                            <span class="testimonial__text-details">
-                              “Getting feedback directly from our regulars is invaluable. We know we can trust it.”
-                            </span>
-                            <a class="testimonial__text-read-more" href="#">
-                                <span class="ent ent-heart"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__column grid__column--4">
-                    <div class="testimonial">
-                        <div class="testimonial__overlay">
-                            <span>Adanna Ugochukwu</span>
-                            <span>“Customers really love it, it’s become quite a fun way for us to give back. It’s exciting.”</span>
-                        </div>
-                        <div class="testimonial__avatar">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/avatar3.jpg?alt=media&token=554e8d3f-a5ab-42ea-804d-35aa05fc06d8" alt="Adanna Ugochukwu">
-                        </div>
-                        <div class="testimonial__text">
-                            <span class="testimonial__text-name">Adanna Ugochukwu</span>
-                            <span class="testimonial__text-details">
-                                “Customers really love it, it’s become quite a fun way for us to give back. It’s exciting.”
-                            </span>
-                            <a class="testimonial__text-read-more" href="#">
-                                <span class="ent ent-heart"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__column grid__column--4">
-                    <div class="testimonial">
-                        <div class="testimonial__overlay">
-                            <span>Rakiya Ibrahim</span>
-                            <span>“I love hanging out with customers, getting to hear their stories. Kash makes this richer.”</span>
-                        </div>
-                        <div class="testimonial__avatar">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/avatar4.jpg?alt=media&token=3f12fcd3-faff-457c-bfac-ec6be48b7d87" alt="Rakiya Ibrahim">
-                        </div>
-                        <div class="testimonial__text">
-                            <span class="testimonial__text-name">Rakiya Ibrahim</span>
-                            <span class="testimonial__text-details">
-                                “I love hanging out with customers, getting to hear their stories. Kash makes this richer.”
-                            </span>
-                            <a class="testimonial__text-read-more" href="#">
-                                <span class="ent ent-heart"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-
-
-
-
-
-<section class="home-section--blue">
-        <div class="container ">
-            <div class="grid customer-plans">
-                <div class="grid__column grid__column--5">
-                    <h2 class="home-section-header__primary-title global-u-text-center-s">Be more discoverable <span class="wave"><img draggable="false" class="emoji" alt="👋🏾" src="https://twemoji.maxcdn.com/2/svg/1f44b-1f3fe.svg"></span>  </h2>
-                       
-                      <h3 class="home-section-header__secondary-title global-u-text-center-s">1000s of shoppers chat with on Facebook Messenger Kash to look for nearby places they can earn rewards, making it easier for your store to get discovered. </h3>
-
-                    <h3 class="home-section-header__secondary-title global-u-text-center-s"> Give it a try! Kash is still learning, so right now it can help with things like 'find hotels in Lagos' or 'find burgers nearby'. Don't forget to start with 'find'.</h3>
-
-                    <a href="https://m.me/1075685092615648" target="_blank" class="button button--rounded button--accent-2 hero-section__call-to-action button--jumbo">
-                                    <img class="button--has-icon" src="https://icon.now.sh/messenger/fff/32" alt="messenger icon">
-                                    Go to Messenger
-                                </a>
-                </div>
-                <div class="grid__column grid__column--7 customer-plans__wrapper">
-                    <div class="customer-plans__bg"></div>
-                </div>
-            </div>
-
-        </div>
-        
-
-
-    </section>
+  <p class="Features-module__buttons___1nc_u">
+    <a href="https://m.me/hirekash">
+      <button class="Button-module__primary___1GlDI Button-module__button___UaHzb">Join the waitlist</button>
+    </a>
+  </p>
+  <p class="Features-module__text___2mzRx Features-module__short___2FCjV">
+    <a href="https://m.me/hirekash" class="Features-module__link___1ndK_">Learn more about how Kash works</a>
+  </p>
+ </div>
+      <div class="grid-col-12 grid-col-8-sm offset-col-1-md grid-col-5-md">
+        <img src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/pos_card%402x.png?alt=media&token=055595e2-3a35-446c-8156-6bb1bcf2bed9" class="u-margin-top-large u-margin-top-none-md u-auto-center" alt="Image of Iphone">
+      </div>
+    </div>
+  </div>
+ </section>
 
 
 
 
 
 
+<br><br>
+<br><br>
 
-
-
-
-
-
-
-<section class="feature-section--has-padding">
-        <div class="container">
-            <div class="grid">
-                <div class="grid__column grid__column--12">
-                    <h2 class="home-section-header__primary-title global-u-text-center">Get more regulars walking into your store</h2>
-                    <p class="home-section-header__secondary-title--hero-caption global-u-text-center">Simply sign up on Facebook Messenger, follow our quick-and-easy setup process to get started</p>
-                </div>
-            </div>
-            <section>
-            <div class="grid">
-                <div class="grid__column grid__column--12">
-                    <div class="partners">
-                      
-
-                    <div class="index-module--image--2M7Ho index-module--show--zjzyd">
-                        <img class="index-module--stationary--29ypZ" src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/cash_till.PNG?alt=media&token=fdc729d0-db35-41ca-8973-12ae2c4a6d81" alt="Cashier" height="auto" width=" 100%" >
-
-                    </div>
-
-                </div>
-              
-               
-            </div>
-        </div>
+<section  class="Features-module__item___1I5J6 Features-module__hero___19JTY Features-module__animated___iQFro Features-module__fadeInRight___3_hvN">
+<div class="container">
+    <div class="grid-row grid-row--center grid-row--middle">
+      <div class="grid-col-12 grid-col-6-md">
+<h2 class="Features-module__title___2uEyu Features-module__trenta___3D3a0 Features-module__short___2FCjV">
+Discover places you can't avoid
+</h2>
+<p class="Features-module__text___2mzRx Features-module__short___2FCjV"> Chat to Kash in Facebook Messenger, any time, anywhere. It learns what you like and then recommends amazing places to eat, drink, shop and play. </p>
+      </div>
+      <div class="grid-col-12 grid-col-8-sm offset-col-1-md grid-col-5-md">
+        <img src="https://monzo.com/usa/static/mob-send-instant-transfers-9e21a4276d1118b91c00d9e35a579739.png" alt="Image of discover kash">
+      </div>
+    </div>
+  </div>
 </section>
-       
-    </section>
-
-
-      <center>
-       <a href="https://m.me/1075685092615648" target="_blank" class="button button--rounded button--accent-2 hero-section__call-to-action button--jumbo">
-                                    <img class="button--has-icon" src="https://icon.now.sh/messenger/fff/32" alt="messenger icon">
-                                    Go to Messenger
-                                </a>
-
-                            </center>
-                        <br><br>
 
 
 
 
-    <section class="feature-section--has-padding home-section--gradient home-section--dark">
-        <div class="container container--md">
-            <div class="grid">
-                <div class="grid__column grid__column--12">
-                    <div class="home-section-header home-section-header--centered">
-                        <h1 class="home-section-header__primary-title">Why Kash?</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="grid">
+
+<br><br>
+<br><br>
 
 
-                <div class="grid__column grid__column--6">
-                    <div class="home-section__setup-steps">
-                        <div class="setup-step">
-                            <div class="setup-step__number">
-                                <div class="badge badge--outline-dark">✓</div>
-                            </div>
-                     
-                            <p class="setup-step__message setup-step__message--has__badge">
-                                Loyal customers spend up to 66% more than your other customers</p>
-                        </div>
-
-                        <div class="setup-step">
-                            <div class="setup-step__number">
-                                <div class="badge badge--outline-dark">✓</div>
-                            </div>
-                      
-                            <p class="setup-step__message setup-step__message--has__badge">
-                               80% of your revenue can be attributed to the top 20% of your customers. </p>
-                        </div>
-
-                        <div class="setup-step">
-                            <div class="setup-step__number">
-                                <div class="badge badge--outline-dark">✓</div>
-                            </div>
-                       
-                            <p class="setup-step__message setup-step__message--has__badge">
-                                86% of consumers are less likely to stray from brands that have loyalty programs </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="grid__column grid__column--6 pull-grid-right grid__column--pull-right global-u-hide-on-mobile fade-in">
-                    <div class="home-section-header">
-                        <h4 class="home-section-header__primary-title global-u-text-left"> Start your loyalty program now!</h4>
-                    </div>
-
-                    <a href="https://m.me/1075685092615648" target="_blank" class="button button--rounded button--accent-2 hero-section__call-to-action button--jumbo">
-                                    <img class="button--has-icon" src="https://icon.now.sh/messenger/fff/32" alt="messenger icon">
-                                    Go to Messenger
-                                </a>
-                </div>
-
-            </div>
 
 
-        </div>
-    </section>
+<section  class="Features-module__item___1I5J6 Features-module__hero___19JTY Features-module__animated___iQFro Features-module__fadeInRight___3_hvN">
+<div class="container">
+    <div class="grid-row grid-row--center grid-row--middle">
+      <div class="grid-col-12 grid-col-6-md">
+
+<h2 class="Features-module__title___2uEyu Features-module__trenta___3D3a0 Features-module__short___2FCjV">Daily Cash. No points. No gimmicks.</h2>
+
+
+     <p class="Features-module__text___2mzRx Features-module__short___2FCjV">When you buy something using your debit or credit card, you get a percentage of your purchase back in Daily Cash.</p>
+
+
+      </div>
+      <div class="grid-col-12 grid-col-8-sm offset-col-1-md grid-col-5-md">
+        <img src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/kash%20pos%20green3.PNG?alt=media&amp;token=cd210e60-fd83-4aee-8262-2c9373e8cdd1" class="u-margin-top-large u-margin-top-none-md u-auto-center" height="500" width="auto" alt="Image of Daily Cash">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<br><br>
+
+<section  class="Features-module__item___1I5J6 Features-module__hero___19JTY Features-module__animated___iQFro Features-module__fadeInRight___3_hvN">
+<div class="container">
+    <div class="grid-row grid-row--center grid-row--middle">
+      <div class="grid-col-12 grid-col-6-md">
+
+<h2 class="Features-module__title___2uEyu Features-module__trenta___3D3a0 Features-module__short___2FCjV">
+Instant notifications
+</h2>
+
+
+     <p class="Features-module__text___2mzRx Features-module__short___2FCjV">Every time you earn Daily Cash, you get an instant notification. So you’ll be the first to know if something doesn’t seem right. </p>
+
+
+      </div>
+      <div class="grid-col-12 grid-col-8-sm offset-col-1-md grid-col-5-md">
+        <img src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/kash%20notifications.png?alt=media&token=fc869594-013f-4893-8aae-a98202d4fe9c" class="u-margin-top-large u-margin-top-none-md u-auto-center" alt="Image of notifications">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<br><br>
+<br><br>
+
+<section  class="Features-module__item___1I5J6 Features-module__hero___19JTY Features-module__animated___iQFro Features-module__fadeInRight___3_hvN">
+<div class="container">
+    <div class="grid-row grid-row--center grid-row--middle">
+      <div class="grid-col-12 grid-col-6-md">
+
+<h2 class="Features-module__title___2uEyu Features-module__trenta___3D3a0 Features-module__short___2FCjV">
+Everyone can use a reminder
+</h2>
+
+
+     <p class="Features-module__text___2mzRx Features-module__short___2FCjV">We send you reminders when your due date is coming up. Why wouldn’t we?</p>
+
+
+      </div>
+      <div class="grid-col-12 grid-col-8-sm offset-col-1-md grid-col-5-md">
+        <img src="https://monzo.com/usa/static/mob-pots-with-goals-99487f307fcf3fd86f574451583e005d.png" class="u-margin-top-large u-margin-top-none-md u-auto-center" alt="Image of the reminder">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<br><br>
+
+<section  class="Features-module__item___1I5J6 Features-module__hero___19JTY Features-module__animated___iQFro Features-module__fadeInRight___3_hvN">
+<div class="container">
+    <div class="grid-row grid-row--center grid-row--middle">
+      <div class="grid-col-12 grid-col-6-md">
+
+<h2 class="Features-module__title___2uEyu Features-module__trenta___3D3a0 Features-module__short___2FCjV">
+Pay yourself in seconds
+</h2>
+
+
+     <p class="Features-module__text___2mzRx Features-module__short___2FCjV">Send your Daily Cash straight to your bank account and watch it add up or spend it on anything you want.</p>
+
+
+      </div>
+      <div class="grid-col-12 grid-col-8-sm offset-col-1-md grid-col-5-md">
+        <img src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/k13.PNG?alt=media&token=95408432-4990-4dbc-9808-e5cb4cf04a0b" class="u-margin-top-large u-margin-top-none-md u-auto-center" alt=" pay yourself in seconds"   height="350"  width="auto" >
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section  class="Features-module__item___1I5J6 Features-module__hero___19JTY Features-module__animated___iQFro Features-module__fadeInRight___3_hvN">
+<div class="container">
+    <div class="grid-row grid-row--center grid-row--middle">
+      <div class="grid-col-12 grid-col-6-md">
+
+<h2 class="Features-module__title___2uEyu Features-module__trenta___3D3a0 Features-module__short___2FCjV">
+Security matters
+</h2>
+
+
+     <p class="Features-module__text___2mzRx Features-module__short___2FCjV">That’s why we use industry leading security practices to ensure your data is safe, all the time. </p>
+
+
+      </div>
+      <div class="grid-col-12 grid-col-8-sm offset-col-1-md grid-col-5-md">
+        <img src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/kash-padlock.svg?alt=media&token=86594e57-4e06-4d47-aca5-fa374d608c12" class="u-margin-top-large u-margin-top-none-md u-auto-center" alt="Image of security padlock"  height="auto" width="250" >
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="strip">
+  <div class="container">
+    <div class="grid-row grid-row--center">
+      <div class="grid-col-12 grid-col-8-md u-align-center">
+        <h2 class="u-font-size-h2 u-font-maison u-font-light">Help us build the kind of loyalty program you want to use</h2>
+      </div>
+    </div>
+    <div class="grid-row grid-row--center">
+      <div class="grid-col-12 grid-col-6-md u-align-center">
+        <p>
+          Add Kash as friend on Facebook Messenger and join thousands of people who've changed the
+          way they spend.
+        </p>
+        <p class="u-margin-top-large">
+         
+       <center>  <img src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/paystack%20badge%20blue.png?alt=media&token=31fc70eb-a6a0-4e98-a491-607d5bd1c0f7" height="auto" width="300"  >
+      </center> 
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div></main>
+    
+
 
     
 
-    <footer class="global-footer">
-        <div class="container">
-            <div class="global-footer__grid grid">
-                <div class="grid__column grid__column--3 grid__column--6-s">
-                    <div class="global-footer__menu-container">
-                        <h4 class="global-footer__menu-header">Company</h4>
-                        <ul class="global-footer__menu">
-                            <li><a href="https://m.me/1075685092615648">About Us</a></li>
-                            <li><a href="https://m.me/1075685092615648">Demo</a></li>
-                            <li><a href="https://kashloyalty.com/faq.html">FAQs</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="grid__column grid__column--3 grid__column--6-s">
-                    <h4 class="global-footer__menu-header">Products</h4>
-                    <ul class="global-footer__menu">
-                        <li><a href="https://m.me/1075685092615648">Features</a></li>
-                        <li><a href="https://m.me/1075685092615648">Pricing</a></li>
-                        <li><a href="https://m.me/1075685092615648">Partner with us</a></li>
-                    </ul>
-                </div>
 
-                <div class="grid__column grid__column--6">
-                    <div class="grid__column grid__column--6 grid__column--6-s">
-                        <h4 class="global-footer__menu-header">Legal</h4>
-                        <ul class="global-footer__menu">
-                            <li><a href="https://kashloyalty.com/terms.html">Terms of Service</a></li>
-                            <li><a href="https://kashloyalty.com/terms.html">Privacy Policy</a></li>
-                        </ul>
-                    </div>
 
-                    <div class="grid__column grid__column--6 grid__column--6-s">
-                        <h4 class="global-footer__menu-header">Connect With Us</h4>
-                        <ul class="global-footer__menu social">
-                            <li style="padding:10px;"><a href="https://twitter.com/kashloyalty_" target="_blank">
-                                   <svg width="30px" height="30px" class="twitter-svg" fill="currentColor" space="preserve" version="1.1" viewBox="0 0 34 34" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
-<path d="M32,7.7c-1.1,0.5-2.3,0.8-3.5,1c1.3-0.8,2.2-2,2.7-3.4C30,6,28.7,6.5,27.3,6.8c-1.1-1.2-2.7-1.9-4.5-1.9
-    c-3.4,0-6.2,2.8-6.2,6.2c0,0.5,0.1,1,0.2,1.4C11.7,12.1,7.2,9.7,4.1,6C3.6,6.9,3.3,7.9,3.3,9c0,2.1,1.1,4,2.7,5.1
-    c-1,0-2-0.3-2.8-0.8c0,0,0,0.1,0,0.1c0,3,2.1,5.5,4.9,6c-0.5,0.1-1.1,0.2-1.6,0.2c-0.4,0-0.8,0-1.2-0.1c0.8,2.4,3.1,4.2,5.7,4.3
-    c-2.1,1.7-4.8,2.6-7.6,2.6c-0.5,0-1,0-1.5-0.1c2.7,1.7,6,2.8,9.4,2.8c11.3,0,17.5-9.4,17.5-17.5c0-0.3,0-0.5,0-0.8
-    C30.2,10,31.2,8.9,32,7.7z"></path>
-</svg>
-                                </a></li>
-                            <li style="padding:10px;"><a href="https://web.facebook.com/kashloyalty/?view_public_for=1075685092615648" target="_blank">
-                                   <svg width="30px" height="30px" class="facebook-svg" fill="currentColor" space="preserve" version="1.1" viewBox="0 0 34 34" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
-<path d="M30.3,2H3.7C2.7,2,2,2.7,2,3.7v26.7C2,31.3,2.7,32,3.7,32H18V20.4h-3.9v-4.5H18v-3.3c0-3.9,2.4-6,5.8-6
-      c1.7,0,3.1,0.1,3.5,0.2v4l-2.4,0c-1.9,0-2.2,0.9-2.2,2.2v2.9h4.5l-0.6,4.5h-3.9V32h7.6c0.9,0,1.7-0.7,1.7-1.7V3.7
-      C32,2.7,31.3,2,30.3,2z"></path>
-</svg>
-                                </a></li>
-                            <li style="padding:10px;"><a href="https://www.instagram.com/kashloyalty_/" target="_blank">
-                                   <svg width="30px" height="30px" class="instagram-svg" fill="currentColor" space="preserve" version="1.1" viewBox="0 0 24 24" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
-<circle cx="12" cy="12" r="3"></circle>
-<path d="M18,2H6C3.8,2,2,3.8,2,6v12c0,2.2,1.8,4,4,4h12c2.2,0,4-1.8,4-4V6C22,3.8,20.2,2,18,2z M12,17c-2.8,0-5-2.2-5-5 s2.2-5,5-5s5,2.2,5,5S14.8,17,12,17z M17.5,8C16.7,8,16,7.3,16,6.5S16.7,5,17.5,5S19,5.7,19,6.5S18.3,8,17.5,8z"></path>
-</svg>
-                                </a></li>
-                        </ul><br>
-                        <ul class="global-footer__menu">
-                            <li><a href="mailto:hello@kashloyalty.com">hello@kashloyalty.com</a></li>
-                            <li><a href="tel:2348064117751">+234 (0) 806 411 7751</a></li>
-                        </ul>
-                    </div>
 
-                </div>
-                <div class="grid__column grid__column--12 grid__column--12-s">
-                    <p>Come say hello to us at our office 👋🏽</p>29 Mambilla Street, Off Aso Drive, Maitama, Abuja, Nigeria.<p></p>
-                </div>
+  
+    </div>
 
-                <span class="webxray-deleted"></span>
-                <div class="grid__column grid__column--9">
-                    <div class="global-footer__copyright global-u-left">© 2018 Kash, All Rights Reserved</div>
-                </div>
-                <div class="grid__column grid__column--3">
-                    <a href="#top" class="global-footer__copyright global-u-right">Back to top</a>
-                </div>
-            </div>
+    <div class="Layout-module__dark___1BkQI Layout-module__main___1OIFf">
+      <section class="Layout-module__container___2EaUW Layout-module__container___2EaUW">
+        <h2 class="AccessibilityText-module__accessibilityText___ANLfO">Reasons to Signup</h2>
+        <ul class="ReasonsToSignup-module__list___39AY8">
+          <li class="ReasonsToSignup-module__item___2SHfe">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxyZWN0IGlkPSJhIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI0Ii8+PHBhdGggZD0iTTIzLjk0IDE2LjgwOGEuNzM2LjczNiAwIDAgMC0uOTk0LS4yNmwtMi4yMzcgMS4yNjMtMy4zMTctMS44NzQgMy4zMTctMS44NzMgMi4yMzcgMS4yNjNhLjczNC43MzQgMCAwIDAgLjk5NS0uMjYuNzA0LjcwNCAwIDAgMC0uMjY3LS45NzNsLTEuNTA5LS44NTEgMS40MTctLjhhLjcwMy43MDMgMCAwIDAgLjI2Ni0uOTcyLjczOC43MzggMCAwIDAtLjk5NC0uMjYxbC0xLjQxNy44di0xLjcwNGEuNzIuNzIgMCAwIDAtLjcyOC0uNzEyLjcyLjcyIDAgMCAwLS43MjguNzEydjIuNTI2bC0zLjMxNyAxLjg3M3YtMy43NDdMMTguOSA5LjY5NWEuNzAzLjcwMyAwIDAgMCAuMjY3LS45NzMuNzM3LjczNyAwIDAgMC0uOTk0LS4yNmwtMS41MDkuODV2LTEuNkEuNzIuNzIgMCAwIDAgMTUuOTM2IDdhLjcyLjcyIDAgMCAwLS43MjcuNzEydjEuNkwxMy43IDguNDZhLjczNy43MzcgMCAwIDAtLjk5NC4yNmMtLjIuMzQtLjA4MS43NzYuMjY3Ljk3M2wyLjIzNiAxLjI2M3YzLjc0NmwtMy4zMTctMS44NzN2LTIuNTI1YS43Mi43MiAwIDAgMC0uNzI3LS43MTIuNzIuNzIgMCAwIDAtLjcyOS43MTJ2MS43MDRsLTEuNDE3LS44YS43MzYuNzM2IDAgMCAwLS45OTQuMjZjLS4yLjM0MS0uMDguNzc3LjI2Ny45NzNsMS40MTcuOC0xLjUwOC44NTJhLjcwNC43MDQgMCAwIDAtLjI2Ny45NzIuNzM3LjczNyAwIDAgMCAuOTk0LjI2bDIuMjM3LTEuMjYyIDMuMzE5IDEuODc0LTMuMzE1IDEuODczLTIuMjM3LTEuMjYzYS43MzcuNzM3IDAgMCAwLS45OTQuMjZjLS4yMDEuMzQtLjA4Mi43NzYuMjY2Ljk3M2wxLjUwOC44NTEtMS40MTcuOGEuNzA0LjcwNCAwIDAgMC0uMjY2Ljk3MmMuMTM0LjIyOC4zOC4zNTYuNjMuMzU2LjEyNSAwIC4yNS0uMDMuMzY0LS4wOTVsMS40MTYtLjh2MS43MDNhLjcyLjcyIDAgMCAwIC43MjguNzEyLjcyLjcyIDAgMCAwIC43MjctLjcxMnYtMi41MjNsMy4zMTctMS44NzR2My43NDdsLTIuMjM1IDEuMjYzYS43MDIuNzAyIDAgMCAwLS4yNjcuOTczLjczLjczIDAgMCAwIC45OTUuMjZsMS41MDgtLjg1MXYxLjZhLjcyLjcyIDAgMCAwIC43MjguNzEzLjcyLjcyIDAgMCAwIC43MjgtLjcxM3YtMS42bDEuNTA4Ljg1MWEuNzM2LjczNiAwIDAgMCAuOTk0LS4yNi43MDQuNzA0IDAgMCAwLS4yNjctLjk3M2wtMi4yMzYtMS4yNjN2LTMuNzQ0bDMuMzEyIDEuODd2Mi41MjZhLjcyLjcyIDAgMCAwIC43MjguNzEzLjcyLjcyIDAgMCAwIC43MjktLjcxM3YtMS43MDNsMS40MTcuOGEuNzM0LjczNCAwIDAgMCAuOTk0LS4yNi43MDQuNzA0IDAgMCAwLS4yNjctLjk3M2wtMS40MTctLjggMS41MDgtLjg1MWEuNzA1LjcwNSAwIDAgMCAuMjY3LS45NzV6IiBpZD0iYiIvPjwvZGVmcz48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjx1c2UgZmlsbD0iI0ZERDdEQyIgeGxpbms6aHJlZj0iI2EiLz48dXNlIGZpbGw9IiNGNDM5NTEiIHhsaW5rOmhyZWY9IiNiIi8+PC9nPjwvc3ZnPg==" alt="" class="ReasonsToSignup-module__icon___1u7l3">
+            <h3 class="ReasonsToSignup-module__heading___1aolz ReasonsToSignup-module__grande___1DXGY">Stay in control</h3>
+            <p class="ReasonsToSignup-module__text___3bUOV ReasonsToSignup-module__short___20r8H">If you lose your card, freeze it in the app and get a new one. (Or defrost it if you find it&nbsp;again.)</p>
+          </li>
+          <li class="ReasonsToSignup-module__item___2SHfe">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxyZWN0IGlkPSJhIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI0Ii8+PHBhdGggZD0iTTExLjE5IDE0LjY2MXYtMi42MzNhNS4wMjggNS4wMjggMCAxIDEgMTAuMDU1IDB2Mi42MzNoLjk3Yy44NTMgMCAxLjU0NC42OSAxLjU0NCAxLjU0M3Y3LjEyOWMwIC44NTItLjY5MSAxLjU0My0xLjU0MyAxLjU0M0gxMC4yMTljLS44NTIgMC0xLjU0My0uNjktMS41NDMtMS41NDN2LTcuMTNjMC0uODUxLjY5LTEuNTQyIDEuNTQzLTEuNTQyaC45N3ptMS44ODUgMGg2LjI4NHYtMi42MDNhMy4xNDIgMy4xNDIgMCAwIDAtNi4yODQgMHYyLjYwM3oiIGlkPSJiIi8+PC9kZWZzPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHVzZSBmaWxsPSIjRkZGIiB4bGluazpocmVmPSIjYSIvPjx1c2UgZmlsbD0iI0ZERUVEMyIgeGxpbms6aHJlZj0iI2EiLz48dXNlIGZpbGw9IiNGNUE2MjMiIHhsaW5rOmhyZWY9IiNiIi8+PC9nPjwvc3ZnPg==" alt="" class="ReasonsToSignup-module__icon___1u7l3">
+            <h3 class="ReasonsToSignup-module__heading___1aolz ReasonsToSignup-module__grande___1DXGY">Rest easy</h3>
+            <p class="ReasonsToSignup-module__text___3bUOV ReasonsToSignup-module__short___20r8H">Money in your Kash account is protected by NDIC, you’re insured up to&nbsp;NGN250,000.</p>
+          </li>
+         <li class="ReasonsToSignup-module__item___2SHfe">
+                <img src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/money%20icon.PNG?alt=media&amp;token=8cce6e4c-5316-4bfd-b76f-5c83e075ea2a" alt="" class="ReasonsToSignup-module__icon___1u7l3">
+
+                <h3 class="ReasonsToSignup-module__heading___1aolz ReasonsToSignup-module__grande___1DXGY">Take out cash
+                </h3>
+
+                <p class="ReasonsToSignup-module__text___3bUOV ReasonsToSignup-module__short___20r8H">We won’t charge you to withdraw cash in Nigeria, but you may be charged by the ATM operator. When you’re abroad, the first NGN2000 every 30 days are free, with a 3% charge after that.
+                </p>
+              </li>
+          <li class="ReasonsToSignup-module__item___2SHfe">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxyZWN0IGlkPSJhIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI0Ii8+PC9kZWZzPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHVzZSBmaWxsPSIjQ0NFREY4IiB4bGluazpocmVmPSIjYSIvPjxwYXRoIGQ9Ik0xMi45NjEgMjMuMTkybC0uMDA4LjAwOEw3IDE3LjIxNWwxLjk4NC0xLjk5NSAzLjk3NyAzLjk5OCA5LjkzLTkuOTg0IDEuOTg1IDEuOTk2TDEyLjk3IDIzLjJsLS4wMDktLjAwOHoiIGZpbGw9IiMwMEE0REIiLz48L2c+PC9zdmc+" alt="" class="ReasonsToSignup-module__icon___1u7l3">
+            <h3 class="ReasonsToSignup-module__heading___1aolz ReasonsToSignup-module__grande___1DXGY">Spend for free</h3><p class="ReasonsToSignup-module__text___3bUOV ReasonsToSignup-module__short___20r8H">We don’t charge fees for spending on your card, we don’t charge overdraft fees, and we don’t mark up the exchange rate when you go&nbsp;abroad.</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="Layout-module__darkest___qdETW Layout-module__main___1OIFf">
+      <section class="Layout-module__container___2EaUW Layout-module__container___2EaUW">
+        <h2 class="AccessibilityText-module__accessibilityText___ANLfO">Community and events</h2>
+
+        <svg class="LaunchEvents-module__icon___32ltV" role="presentation"><use xlink:href="#heart" href="#heart"></use></svg>
+
+        <p class="LaunchEvents-module__text___3QoZ5 LaunchEvents-module__short___2Y1v5">In Nigeria, our customers chose our name, suggest new features and help test everything we do. They’re the heart of Kash, and we’d like you to join&nbsp;them.</p>
+
+        <p class="LaunchEvents-module__text___3QoZ5 LaunchEvents-module__short___2Y1v5">Join our online forum and come along to our hand-out events. We want to meet you and hear your feedback, talk about features, and understand what will make Kash work for&nbsp;you.</p>
+
+        <div class="LaunchEvents-module__buttons___1AeL-">
+          <a href="https://twitter.com/hirekash" class="Button-module__tertiary___2W4SU Button-module__button___UaHzb">Follow us on Twitter</a> 
+          <a href="  " class="Button-module__tertiary___2W4SU Button-module__button___UaHzb">Follow us on Facebook</a> 
+        </div>
+      </section>
+    </div>
+
+
+
+
+
+
+        <div class="Layout-module__light___3fkrI Layout-module__main___1OIFf">
+          <section id="waitlist-signup" class="Layout-module__container___2EaUW Layout-module__container___2EaUW">
+            
+           
+                <h1 class="SignupForm-module__legend___2awRP">Still have a question? </h1>
+
+              
+<br> 
+<br>
+                 <img src="https://firebasestorage.googleapis.com/v0/b/newagent-3cbce.appspot.com/o/referrals-desks.png?alt=media&amp;token=6db10405-9430-40cf-b237-d24f199c89d6">
+<br>
+                 <a href="https://m.me/hirekash">
+                    <button class="Button-module__primary___1GlDI Button-module__button___UaHzb">Join the waitlist
+                    </button> </a>
+               
+          
+          </section>
         </div>
 
 
-    </footer>
 
-    <script src="js/vendor/animate.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
 
-    <script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.3.0"></script>
+  </main>
 
-    <script>
 
-        $(document).ready(function () {
-            var handwaveEmoji = document.querySelector('.wave');
-            twemoji.parse(handwaveEmoji, {
-                folder: 'svg',
-                ext: '.svg'
-            });
-        });
-    </script>
+        <a class="banner-link" href="https://m.me/hirekash">Currently only available in Nigeria 🇳🇬 <span class="banner-call-to-action">Find out more <span aria-hidden="true">›</span></span></a>
 
-</body></html>
+  <footer class="Footer-module__footer___VUGIP">
+    <div class="Footer-module__container___39nRG Footer-module__container___39nRG">
+      <div>
+        <label>
+              <span class="AccessibilityText-module__accessibilityText___ANLfO">Switch website</span>
+              <select class="CountrySwitcher-module__switcher___3991V">
+                <option value="https://kashloyalty.com">🇬🇭  Ghana </option>
+                <option selected="🇳🇬  Nigeria" value="https://kashloyalty.com/">🇳🇬  Nigeria</option>
+              </select>
+            </label>
+      </div>
+      
+        <li class="Footer-module__item___K9iG3">
+          <a class="Footer-module__link___2WPgG" href="https://kashloyalty.com/">Join the team</a>
+        </li><li class="Footer-module__item___K9iG3">
+          <a class="Footer-module__link___2WPgG" href="mailto:hello@kashloyalty.com" aria-label="Email us at hello@kashloyalty.com">hello@kashloyalty.com</a>
+        </li>
+        <li class="Footer-module__item___K9iG3">
+          <a class="Footer-module__link___2WPgG" href=" " aria-label="Kash Privacy Notice">Privacy Notice</a>
+        </li>
+      
+       <nav class="c-footer__social">
+          <a data-analytics-category="footer" data-analytics-action="visit social channel" data-analytics-label="twitter" class="c-footer__social-link" href="https://twitter.com/hirekash">
+            <img src="https://d33wubrfki0l68.cloudfront.net/7c4833acc25609b5b10eb8fa93eda189c6499943/375bf/static/images/twitter.svg" alt="Twitter">
+          </a>
+          <a data-analytics-category="footer" data-analytics-action="visit social channel" data-analytics-label="instagram" class="c-footer__social-link" href="https://www.instagram.com/hire.kash/">
+            <img src="https://d33wubrfki0l68.cloudfront.net/54eee2417052a64260fd4b51a3095d2585b326bf/e5287/static/images/social-icon-instagram.svg" alt="Instagram">
+          </a>
+          <a data-analytics-category="footer" data-analytics-action="visit social channel" data-analytics-label="facebook" class="c-footer__social-link" href="https://web.facebook.com/hirekash/?view_public_for=1075685092615648">
+            <img src="https://d33wubrfki0l68.cloudfront.net/78c691dfe4746cb8a7c995d185d9ae2303a81eb2/efc18/static/images/facebook.svg" alt="Facebook">
+          </a>
+          <a data-analytics-category="footer" data-analytics-action="visit social channel" data-analytics-label="linkedin" class="c-footer__social-link" href="https://www.linkedin.com/company/sendroid/about/?viewAsMember=true">
+            <img src="https://d33wubrfki0l68.cloudfront.net/736e5ecac35e0ff72b923877cfffef4abf57edce/73171/static/images/linkedin.svg" alt="LinkedIn">
+          </a>
+    
+        </nav>
+
+
+           </a></div><div class="Footer-module__disclaimer___26WsU Footer-module__container___39nRG Footer-module__container___39nRG">
+              <p>© 2019 Kash, Inc. All rights reserved.</p>
+            </div>
+          </footer>
+        </div>
+      </div>
+
+    
+    </body></html>
